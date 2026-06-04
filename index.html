@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposition Commerciale — L'Instant Glow × Inès Ouajib · Stratégie Marketing</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cherry: #8B0435;
+    --cherry-dark: #6E0329;
+    --cherry-light: rgba(139,4,53,0.07);
+    --cherry-mid: rgba(139,4,53,0.15);
+    --ink: #111111;
+    --ink-soft: #333333;
+    --bg: #FAFAF8;
+    --white: #FFFFFF;
+    --border: #E5E0DA;
+    --muted: #7A746E;
+    --muted-light: #B0A9A2;
+    --gold: #C4963C;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Mulish', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+
+  /* ─── COVER PAGE ─── */
+  .cover {
+    min-height: 100vh;
+    background: var(--ink);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  .cover-noise {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .cover-accent-top {
+    height: 4px;
+    background: var(--cherry);
+    width: 100%;
+  }
+
+  .cover-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cover-logo {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .logo-name {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  .logo-name strong {
+    display: block;
+    color: rgba(255,255,255,0.9);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+  }
+
+  .cover-center {
+    text-align: left;
+    max-width: 700px;
+  }
+
+  .cover-eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .cover-eyebrow::after {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: var(--cherry);
+  }
+
+  .cover-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.0;
+    margin-bottom: 0.5rem;
+  }
+  .cover-title em {
+    font-style: italic;
+    color: rgba(255,255,255,0.5);
+  }
+  .cover-title strong {
+    font-weight: 600;
+    display: block;
+    color: var(--white);
+  }
+
+  .cover-client {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .cover-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .cover-meta-label {
+    font-size: 0.58rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+  }
+  .cover-meta-value {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.85);
+    font-weight: 300;
+  }
+
+  .cover-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .cover-bottom-note {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.25);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
+
+  .cover-badge {
+    background: var(--cherry);
+    color: white;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+  }
+
+  /* ─── DOCUMENT BODY ─── */
+  .doc-wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 4rem 3rem 6rem;
+  }
+
+  /* ─── SECTION DIVIDER ─── */
+  .section-divider {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 3.5rem 0 2rem;
+  }
+  .section-divider:first-child { margin-top: 0; }
+
+  .section-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--cherry-mid);
+    line-height: 1;
+    flex-shrink: 0;
+    letter-spacing: -0.03em;
+  }
+
+  .section-meta { flex: 1; }
+
+  .section-tag {
+    font-size: 0.58rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+
+  .section-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ─── CARDS ─── */
+  .card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  .card-header {
+    background: var(--cherry);
+    padding: 0.7rem 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .card-header-title {
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+  }
+
+  .card-body {
+    padding: 1.4rem 1.6rem;
+  }
+
+  .card-body p {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  /* ─── TWO-COL GRID ─── */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* ─── HIGHLIGHT BOX ─── */
+  .highlight {
+    background: var(--cherry-light);
+    border-left: 3px solid var(--cherry);
+    border-radius: 0 10px 10px 0;
+    padding: 1rem 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .highlight p {
+    font-size: 0.85rem;
+    color: var(--ink);
+    line-height: 1.7;
+    font-weight: 400;
+  }
+  .highlight strong { color: var(--cherry); font-weight: 600; }
+
+  /* ─── LIST ─── */
+  .styled-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .styled-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  .styled-list li:last-child { border-bottom: none; }
+  .styled-list li::before {
+    content: '→';
+    color: var(--cherry);
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+    font-weight: 600;
+  }
+
+  /* ─── TIMELINE ─── */
+  .timeline {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: var(--border);
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -0.6rem;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--cherry);
+    border: 2px solid var(--white);
+    box-shadow: 0 0 0 1px var(--cherry);
+  }
+  .timeline-date {
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .timeline-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+  }
+  .timeline-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  .timeline-desc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.3rem 0 0;
+  }
+  .timeline-desc ul li {
+    padding: 0.15rem 0;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .timeline-desc ul li::before {
+    content: '—';
+    color: var(--cherry);
+    flex-shrink: 0;
+    font-size: 0.75rem;
+  }
+
+  /* ─── PRICING TABLE ─── */
+  .pricing-card {
+    background: var(--ink);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .pricing-header {
+    padding: 2rem 2rem 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .pricing-tag {
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .pricing-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.3rem;
+  }
+  .pricing-sub {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.4);
+    font-weight: 300;
+  }
+  .pricing-amount {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .pricing-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1;
+  }
+  .pricing-currency {
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+  }
+  .pricing-period {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.35);
+    font-weight: 300;
+    margin-left: 0.3rem;
+  }
+  .pricing-includes {
+    padding: 1.5rem 2rem 2rem;
+  }
+  .pricing-includes-title {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+  }
+  .pricing-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 0.4rem 0;
+    font-size: 0.83rem;
+    color: rgba(255,255,255,0.75);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .pricing-item::before {
+    content: '✓';
+    color: var(--cherry);
+    font-weight: 700;
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    margin-top: 0.15rem;
+  }
+
+  .pricing-note {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 2rem 0;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.35);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  .pricing-footer {
+    padding: 1.5rem 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .pricing-badge {
+    background: var(--cherry);
+    color: white;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+  }
+  .pricing-badge.outline {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* ─── PRICING OPTIONS GRID ─── */
+  .pricing-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .pricing-option {
+    background: var(--ink);
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+  }
+  .pricing-option.featured {
+    box-shadow: 0 0 0 2px var(--cherry);
+  }
+  .pricing-option-badge {
+    background: var(--cherry);
+    color: white;
+    font-size: 0.55rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.35rem;
+  }
+  .pricing-option-inner {
+    padding: 1.4rem;
+  }
+  .pricing-option-label {
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+  .pricing-option-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.6rem;
+    line-height: 1.2;
+  }
+  .pricing-option-price {
+    display: flex;
+    align-items: baseline;
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .pricing-option-price .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1;
+  }
+  .pricing-option-price .currency {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.4);
+  }
+  .pricing-option-price .per {
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.3);
+    margin-left: 0.2rem;
+  }
+  .pricing-option-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .pricing-option-features li {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.65);
+    font-weight: 300;
+    padding: 0.3rem 0;
+    display: flex;
+    gap: 0.5rem;
+    line-height: 1.4;
+  }
+  .pricing-option-features li::before {
+    content: '✓';
+    color: var(--cherry);
+    font-size: 0.65rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+  .pricing-option-features li.not-included {
+    color: rgba(255,255,255,0.25);
+  }
+  .pricing-option-features li.not-included::before {
+    content: '·';
+    color: rgba(255,255,255,0.15);
+  }
+
+  /* ─── SEPARATOR ─── */
+  .sep {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 1.5rem;
+  }
+  .sep-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted-light);
+    flex-shrink: 0;
+  }
+  .sep-line { flex: 1; height: 1px; background: var(--border); }
+
+  /* ─── KPI ROW ─── */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .kpi-box {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.1rem;
+    text-align: center;
+  }
+  .kpi-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--cherry);
+    line-height: 1;
+    margin-bottom: 0.2rem;
+  }
+  .kpi-label {
+    font-size: 0.7rem;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  /* ─── TABLE ─── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin-bottom: 1rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .data-table thead tr {
+    background: var(--ink);
+  }
+  .data-table thead th {
+    padding: 0.7rem 0.9rem;
+    text-align: left;
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    font-weight: 600;
+  }
+  .data-table tbody tr {
+    border-bottom: 1px solid var(--border);
+  }
+  .data-table tbody tr:last-child { border-bottom: none; }
+  .data-table tbody tr:nth-child(even) { background: rgba(0,0,0,0.015); }
+  .data-table tbody tr.highlight-row {
+    background: var(--cherry-light);
+  }
+  .data-table tbody td {
+    padding: 0.65rem 0.9rem;
+    color: var(--ink-soft);
+    font-weight: 300;
+    line-height: 1.5;
+    vertical-align: top;
+  }
+  .data-table tbody tr.highlight-row td {
+    color: var(--cherry);
+    font-weight: 700;
+  }
+
+  /* ─── SWOT ─── */
+  .swot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .swot-cell {
+    background: var(--white);
+    padding: 1.2rem 1.4rem;
+  }
+  .swot-cell-label {
+    font-size: 0.58rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid;
+  }
+  .swot-cell-label.forces { color: #2D7A3A; border-color: #2D7A3A; }
+  .swot-cell-label.faiblesses { color: #C0392B; border-color: #C0392B; }
+  .swot-cell-label.opportunites { color: #1A6FA8; border-color: #1A6FA8; }
+  .swot-cell-label.menaces { color: #B7630A; border-color: #B7630A; }
+  .swot-cell ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .swot-cell ul li {
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    font-weight: 300;
+    padding: 0.25rem 0;
+    line-height: 1.5;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .swot-cell ul li::before {
+    content: '·';
+    color: var(--muted-light);
+    flex-shrink: 0;
+  }
+
+  /* ─── PESTEL / PORTER ROWS ─── */
+  .analysis-row {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.84rem;
+  }
+  .analysis-row:first-child { border-top: 1px solid var(--border); }
+  .analysis-label {
+    min-width: 160px;
+    padding: 0.8rem 1rem;
+    background: var(--cherry-light);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 700;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .analysis-content {
+    padding: 0.8rem 1rem;
+    color: var(--ink-soft);
+    font-weight: 300;
+    line-height: 1.65;
+    font-size: 0.83rem;
+    flex: 1;
+  }
+  .analysis-content strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  /* ─── AXE CARD ─── */
+  .axe-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  .axe-header {
+    background: var(--ink);
+    padding: 1rem 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .axe-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cherry);
+    line-height: 1;
+  }
+  .axe-title {
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+  }
+  .axe-sub {
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.35);
+    font-weight: 300;
+    margin-top: 0.1rem;
+  }
+  .axe-body {
+    padding: 1.2rem 1.5rem;
+  }
+  .axe-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .axe-body ul li {
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  .axe-body ul li:last-child { border-bottom: none; }
+  .axe-body ul li strong { color: var(--cherry); font-weight: 600; }
+
+  /* ─── FOOTER ─── */
+  .doc-footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .doc-footer-brand {
+    font-size: 0.68rem;
+    color: var(--muted-light);
+    font-weight: 300;
+    letter-spacing: 0.06em;
+  }
+  .doc-footer-brand strong {
+    color: var(--cherry);
+    font-weight: 600;
+  }
+  .doc-footer-page {
+    font-size: 0.65rem;
+    color: var(--muted-light);
+    font-weight: 300;
+  }
+
+  /* ─── SECTION BREAK ─── */
+  .section-break {
+    margin: 4rem 0 3rem;
+    text-align: center;
+    position: relative;
+  }
+  .section-break::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--border);
+  }
+  .section-break span {
+    position: relative;
+    background: var(--bg);
+    padding: 0 1.5rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+  }
+
+  /* ─── PRINT ─── */
+  @media print {
+    body { background: white; }
+    .cover { min-height: 100vh; page-break-after: always; }
+    .card, .highlight, .kpi-box { break-inside: avoid; }
+  }
+
+  @media (max-width: 600px) {
+    .cover-inner { padding: 2.5rem 2rem; }
+    .doc-wrap { padding: 2rem 1.5rem 4rem; }
+    .grid-2, .grid-3, .pricing-options { grid-template-columns: 1fr; }
+    .kpi-row { grid-template-columns: 1fr 1fr; }
+    .swot-grid { grid-template-columns: 1fr; }
+    .cover-title { font-size: 2.8rem; }
+    .pricing-num { font-size: 3rem; }
+    .analysis-label { min-width: 120px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════ COVER ══════════════ -->
+<div class="cover">
+  <div class="cover-noise"></div>
+  <div class="cover-accent-top"></div>
+  <div class="cover-inner">
+
+    <div class="cover-logo">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwMCIgem9vbUFuZFBhbj0ibWFnbmlmeSIgdmlld0JveD0iMCAwIDE1MDAgODk5Ljk5OTk5IiBoZWlnaHQ9IjEyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiIHZlcnNpb249IjEuMCI+PGRlZnM+PGcvPjxjbGlwUGF0aCBpZD0iZDIwNzU0NTA1MSI+PHBhdGggZD0iTSAwLjIzODI4MSAwLjU1ODU5NCBMIDExMjUgMC41NTg1OTQgTCAxMTI1IDg5NiBMIDAuMjM4MjgxIDg5NiBaIE0gMC4yMzgyODEgMC41NTg1OTQgIiBjbGlwLXJ1bGU9Im5vbnplcm8iLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0iYmYzNDdlN2QzNCI+PHBhdGggZD0iTSAxODQgMC41NTg1OTQgTCA2MzggMC41NTg1OTQgTCA2MzggODUyIEwgMTg0IDg1MiBaIE0gMTg0IDAuNTU4NTk0ICIgY2xpcC1ydWxlPSJub256ZXJvIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9IjM4YjU2YTY5YzUiPjxwYXRoIGQ9Ik0gNjIwIDAuNTU4NTk0IEwgMTExMSAwLjU1ODU5NCBMIDExMTEgODY5IEwgNjIwIDg2OSBaIE0gNjIwIDAuNTU4NTk0ICIgY2xpcC1ydWxlPSJub256ZXJvIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9ImZhNDk2MzI5N2UiPjxyZWN0IHg9IjAiIHdpZHRoPSIxMTI1IiB5PSIwIiBoZWlnaHQ9Ijg5NiIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSI5ZjVkNGY1NzVlIj48cGF0aCBkPSJNIDExMjcgNjc0IEwgMTQyNS4xMjEwOTQgNjc0IEwgMTQyNS4xMjEwOTQgODkxIEwgMTEyNyA4OTEgWiBNIDExMjcgNjc0ICIgY2xpcC1ydWxlPSJub256ZXJvIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9ImE5NzkwYzg4M2IiPjxyZWN0IHg9IjAiIHdpZHRoPSIyOTkiIHk9IjAiIGhlaWdodD0iMjE3Ii8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9IjI0MjY1YmQ1NjUiPjxyZWN0IHg9IjAiIHdpZHRoPSIxNDI2IiB5PSIwIiBoZWlnaHQ9Ijg5NiIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIDM2LCA0KSI+PGcgY2xpcC1wYXRoPSJ1cmwoIzI0MjY1YmQ1NjUpIj48ZyBjbGlwLXBhdGg9InVybCgjZDIwNzU0NTA1MSkiPjxnIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC0wLjAwMDAwMDAwMDAwMDAwNzEwNSwgMC4wMDAwMDAwMDAwMDAxMDc0NykiPjxnIGNsaXAtcGF0aD0idXJsKCNmYTQ5NjMyOTdlKSI+PGcgZmlsbD0iIzliMDAxYyIgZmlsbC1vcGFjaXR5PSIxIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjkyMDc4LCA4NTEuNDc5NTkzKSI+PGc+PHBhdGggZD0iTSAyOC4zNTkzNzUgMCBDIDIwLjU3ODEyNSAtMTMuOTA2MjUgMTYuNjg3NSAtMzUuMzE2NDA2IDE2LjY4NzUgLTY0LjIzNDM3NSBDIDE2LjY4NzUgLTkyLjU4NTkzOCAyMC4zMDA3ODEgLTEyMy41ODU5MzggMjcuNTMxMjUgLTE1Ny4yMzQzNzUgQyAzNC43NTc4MTIgLTE5MC44Nzg5MDYgNDMuMDk3NjU2IC0yMjQuNTE5NTMxIDUyLjU0Njg3NSAtMjU4LjE1NjI1IEMgNjIuMDAzOTA2IC0yOTEuODAwNzgxIDcwLjM0NzY1NiAtMzIyLjUyMzQzOCA3Ny41NzgxMjUgLTM1MC4zMjgxMjUgQyA4NC44MDQ2ODggLTM3OC4xNDA2MjUgODguNDIxODc1IC00MDAuMzgyODEyIDg4LjQyMTg3NSAtNDE3LjA2MjUgQyA4OC40MjE4NzUgLTQzMy43NSA4NC44MDQ2ODggLTQ1Ni4xMjg5MDYgNzcuNTc4MTI1IC00ODQuMjAzMTI1IEMgNzAuMzQ3NjU2IC01MTIuMjg1MTU2IDYyLjAwMzkwNiAtNTQzLjAwNzgxMiA1Mi41NDY4NzUgLTU3Ni4zNzUgQyA0My4wOTc2NTYgLTYwOS43MzgyODEgMzQuNzU3ODEyIC02NDMuMjQyMTg4IDI3LjUzMTI1IC02NzYuODkwNjI1IEMgMjAuMzAwNzgxIC03MTAuNTM1MTU2IDE2LjY4NzUgLTc0MS41MzUxNTYgMTYuNjg3NSAtNzY5Ljg5MDYyNSBDIDE2LjY4NzUgLTc5OC44MDQ2ODggMjAuNTc4MTI1IC04MjAuMjE4NzUgMjguMzU5Mzc1IC04MzQuMTI1IEwgMTg1LjE3MTg3NSAtODM0LjEyNSBDIDE5Mi45NjA5MzggLTgyMC4yMTg3NSAxOTYuODU5Mzc1IC03OTguODA0Njg4IDE5Ni44NTkzNzUgLTc2OS44OTA2MjUgQyAxOTYuODU5Mzc1IC03NDEuNTM1MTU2IDE5My4yNDIxODggLTcxMC41MzUxNTYgMTg2LjAxNTYyNSAtNjc2Ljg5MDYyNSBDIDE3OC43ODUxNTYgLTY0My4yNDIxODggMTcwLjQ0MTQwNiAtNjA5LjczODI4MSAxNjAuOTg0Mzc1IC01NzYuMzc1IEMgMTUxLjUzNTE1NiAtNTQzLjAwNzgxMiAxNDMuMTk1MzEyIC01MTIuMjg1MTU2IDEzNS45Njg3NSAtNDg0LjIwMzEyNSBDIDEyOC43MzgyODEgLTQ1Ni4xMjg5MDYgMTI1LjEyNSAtNDMzLjc1IDEyNS4xMjUgLTQxNy4wNjI1IEMgMTI1LjEyNSAtNDAwLjM4MjgxMiAxMjguNzM4MjgxIC0zNzguMTQwNjI1IDEzNS45Njg3NSAtMzUwLjMyODEyNSBDIDE0My4xOTUzMTIgLTMyMi41MjM0MzggMTUxLjUzNTE1NiAtMjkxLjgwMDc4MSAxNjAuOTg0Mzc1IC0yNTguMTU2MjUgQyAxNzAuNDQxNDA2IC0yMjQuNTE5NTMxIDE3OC43ODUxNTYgLTE5MC44Nzg5MDYgMTg2LjAxNTYyNSAtMTU3LjIzNDM3NSBDIDE5My4yNDIxODggLTEyMy41ODU5MzggMTk2Ljg1OTM3NSAtOTIuNTg1OTM4IDE5Ni44NTkzNzUgLTY0LjIzNDM3NSBDIDE5Ni44NTkzNzUgLTM1LjMxNjQwNiAxOTIuOTYwOTM4IC0xMy45MDYyNSAxODUuMTcxODc1IDAgWiBNIDI4LjM1OTM3NSAwICIvPjwvZz48L2c+PC9nPjxnIGNsaXAtcGF0aD0idXJsKCNiZjM0N2U3ZDM0KSI+PGcgZmlsbD0iIzliMDAxYyIgZmlsbC1vcGFjaXR5PSIxIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTkuMDYyMzY0LCA4NTEuNDc5NTkzKSI+PGc+PHBhdGggZD0iTSAxODYuODQzNzUgMCBMIDI1LjAzMTI1IDAgTCAyNS4wMzEyNSAtODM0LjEyNSBDIDQyLjgyMDMxMiAtODIzLjU2MjUgNjAuMTk1MzEyIC04MTUuMzU5Mzc1IDc3LjE1NjI1IC04MDkuNTE1NjI1IEMgOTQuMTEzMjgxIC04MDMuNjc5Njg4IDExNC41NTA3ODEgLTgwMC43NjU2MjUgMTM4LjQ2ODc1IC04MDAuNzY1NjI1IEMgMTU5LjYwMTU2MiAtODAwLjc2NTYyNSAxNzcuNTM1MTU2IC04MDMuMjY1NjI1IDE5Mi4yNjU2MjUgLTgwOC4yNjU2MjUgQyAyMDcuMDAzOTA2IC04MTMuMjczNDM4IDIyMC43Njk1MzEgLTgxOS4xMTMyODEgMjMzLjU2MjUgLTgyNS43ODEyNSBDIDI0Ni4zNTE1NjIgLTgzMi40NTcwMzEgMjU5LjU2MjUgLTgzOC4yOTY4NzUgMjczLjE4NzUgLTg0My4yOTY4NzUgQyAyODYuODEyNSAtODQ4LjMwNDY4OCAzMDMuMDc4MTI1IC04NTAuODEyNSAzMjEuOTg0Mzc1IC04NTAuODEyNSBDIDM1OC42Nzk2ODggLTg1MC44MTI1IDM4OC41NjY0MDYgLTg0MC41MTk1MzEgNDExLjY0MDYyNSAtODE5LjkzNzUgQyA0MzQuNzIyNjU2IC03OTkuMzYzMjgxIDQ1MS41NDY4NzUgLTc3MC4zMDQ2ODggNDYyLjEwOTM3NSAtNzMyLjc2NTYyNSBDIDQ3Mi42Nzk2ODggLTY5NS4yMzQzNzUgNDc3Ljk2ODc1IC02NTEuMTY0MDYyIDQ3Ny45Njg3NSAtNjAwLjU2MjUgTCA0NzcuOTY4NzUgMCBMIDMxNS4zMTI1IDAgTCAzMTUuMzEyNSAtNDc3LjEyNSBDIDMxNS4zMTI1IC01MDQuOTE0MDYyIDMxOC43ODUxNTYgLTUyOS4wOTc2NTYgMzI1LjczNDM3NSAtNTQ5LjY3MTg3NSBDIDMzMi42Nzk2ODggLTU3MC4yNTM5MDYgMzQxLjI5Njg3NSAtNTg4LjQ2ODc1IDM1MS41NzgxMjUgLTYwNC4zMTI1IEMgMzYxLjg2NzE4OCAtNjIwLjE2NDA2MiAzNzIuMDE5NTMxIC02MzUuMDM5MDYyIDM4Mi4wMzEyNSAtNjQ4LjkzNzUgQyAzOTIuMDM5MDYyIC02NjIuODQzNzUgNDAwLjUxOTUzMSAtNjc3LjMwMDc4MSA0MDcuNDY4NzUgLTY5Mi4zMTI1IEMgNDE0LjQyNTc4MSAtNzA3LjMzMjAzMSA0MTcuOTA2MjUgLTcyNC4yOTY4NzUgNDE3LjkwNjI1IC03NDMuMjAzMTI1IEMgNDE3LjkwNjI1IC03NTIuNjYwMTU2IDQxNi4wOTc2NTYgLTc2MS42OTUzMTIgNDEyLjQ4NDM3NSAtNzcwLjMxMjUgQyA0MDguODY3MTg4IC03NzguOTM3NSA0MDIuMzMyMDMxIC03ODMuMjUgMzkyLjg3NSAtNzgzLjI1IEMgMzgyLjg2MzI4MSAtNzgzLjI1IDM3My40MTAxNTYgLTc3OS4zNTE1NjIgMzY0LjUxNTYyNSAtNzcxLjU2MjUgQyAzNTUuNjE3MTg4IC03NjMuNzgxMjUgMzQ2LjQ0MTQwNiAtNzU0LjE4NzUgMzM2Ljk4NDM3NSAtNzQyLjc4MTI1IEMgMzI3LjUzNTE1NiAtNzMxLjM4MjgxMiAzMTcuMjUgLTcxOS45ODQzNzUgMzA2LjEyNSAtNzA4LjU3ODEyNSBDIDI5NS4wMDc4MTIgLTY5Ny4xNzk2ODggMjgyLjIyMjY1NiAtNjg3LjU4NTkzOCAyNjcuNzY1NjI1IC02NzkuNzk2ODc1IEMgMjUzLjMwNDY4OCAtNjcyLjAxNTYyNSAyMzYuNjE3MTg4IC02NjguMTI1IDIxNy43MDMxMjUgLTY2OC4xMjUgQyAxODMuNzg1MTU2IC02NjguMTI1IDE1My4zNDM3NSAtNjc3LjMwMDc4MSAxMjYuMzc1IC02OTUuNjU2MjUgQyA5OS40MDYyNSAtNzE0LjAwNzgxMiA3Ni40Njg3NSAtNzQwLjE0NDUzMSA1Ny41NjI1IC03NzQuMDYyNSBDIDU3LjU2MjUgLTc0Ni4yNTc4MTIgNjEuODY3MTg4IC03MTkuNDI1NzgxIDcwLjQ4NDM3NSAtNjkzLjU2MjUgQyA3OS4wOTc2NTYgLTY2Ny43MDcwMzEgODkuOTQxNDA2IC02NDEuODQ3NjU2IDEwMy4wMTU2MjUgLTYxNS45ODQzNzUgQyAxMTYuMDg1OTM4IC01OTAuMTI4OTA2IDEyOS4wMTU2MjUgLTU2My4zMDA3ODEgMTQxLjc5Njg3NSAtNTM1LjUgQyAxNTQuNTg1OTM4IC01MDcuNzA3MDMxIDE2NS4yODkwNjIgLTQ3Ny45NjA5MzggMTczLjkwNjI1IC00NDYuMjY1NjI1IEMgMTgyLjUzMTI1IC00MTQuNTY2NDA2IDE4Ni44NDM3NSAtMzc5LjgxMjUgMTg2Ljg0Mzc1IC0zNDIgWiBNIDE4Ni44NDM3NSAwICIvPjwvZz48L2c+PC9nPjwvZz48ZyBjbGlwLXBhdGg9InVybCgjMzhiNTZhNjljNSkiPjxnIGZpbGw9IiM5YjAwMWMiIGZpbGwtb3BhY2l0eT0iMSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAzLjYzOTY0MiwgODUxLjQ3OTU5MykiPjxnPjxwYXRoIGQ9Ik0gMjYxLjkyMTg3NSAxNi42ODc1IEMgMTg2LjI5Njg3NSAxNi42ODc1IDEyNi41MTU2MjUgLTE4LjYyNSA4Mi41NzgxMjUgLTg5LjI1IEMgMzguNjQ4NDM4IC0xNTkuODc1IDE2LjY4NzUgLTI2OS4xNDQ1MzEgMTYuNjg3NSAtNDE3LjA2MjUgQyAxNi42ODc1IC01NjQuOTc2NTYyIDM4LjY0ODQzOCAtNjc0LjI1IDgyLjU3ODEyNSAtNzQ0Ljg3NSBDIDEyNi41MTU2MjUgLTgxNS41IDE4Ni4yOTY4NzUgLTg1MC44MTI1IDI2MS45MjE4NzUgLTg1MC44MTI1IEMgMzM4LjEwOTM3NSAtODUwLjgxMjUgMzk4LjAyMzQzOCAtODE1LjUgNDQxLjY3MTg3NSAtNzQ0Ljg3NSBDIDQ4NS4zMjgxMjUgLTY3NC4yNSA1MDcuMTU2MjUgLTU2NC45NzY1NjIgNTA3LjE1NjI1IC00MTcuMDYyNSBDIDUwNy4xNTYyNSAtMjY5LjE0NDUzMSA0ODUuMzI4MTI1IC0xNTkuODc1IDQ0MS42NzE4NzUgLTg5LjI1IEMgMzk4LjAyMzQzOCAtMTguNjI1IDMzOC4xMDkzNzUgMTYuNjg3NSAyNjEuOTIxODc1IDE2LjY4NzUgWiBNIDEzMy40Njg3NSAtMTMwLjEyNSBDIDEzMy40Njg3NSAtMTEyLjg4MjgxMiAxMzcuNzczNDM4IC05Ni4zMzU5MzggMTQ2LjM5MDYyNSAtODAuNDg0Mzc1IEMgMTU1LjAxNTYyNSAtNjQuNjQwNjI1IDE2Ny44MDQ2ODggLTUxLjQzNzUgMTg0Ljc2NTYyNSAtNDAuODc1IEMgMjAxLjcyMjY1NiAtMzAuMzEyNSAyMjIuNDM3NSAtMjUuMDMxMjUgMjQ2LjkwNjI1IC0yNS4wMzEyNSBDIDI3OC4wNTA3ODEgLTI1LjAzMTI1IDMwMy45MTAxNTYgLTMyLjUzNTE1NiAzMjQuNDg0Mzc1IC00Ny41NDY4NzUgQyAzNDUuMDU0Njg4IC02Mi41NTQ2ODggMzYwLjYyNSAtODEuNDYwOTM4IDM3MS4xODc1IC0xMDQuMjY1NjI1IEMgMzgxLjc1NzgxMiAtMTI3LjA2NjQwNiAzODcuMDQ2ODc1IC0xNTAuMTQ0NTMxIDM4Ny4wNDY4NzUgLTE3My41IEMgMzg3LjA0Njg3NSAtMjAzLjUzMTI1IDM4NS4zNzUgLTIyOS41MjM0MzggMzgyLjAzMTI1IC0yNTEuNDg0Mzc1IEMgMzc4LjY5NTMxMiAtMjczLjQ1MzEyNSAzNzQuNjY0MDYyIC0yOTMuNDcyNjU2IDM2OS45Mzc1IC0zMTEuNTQ2ODc1IEMgMzY1LjIwNzAzMSAtMzI5LjYxNzE4OCAzNjAuNDc2NTYyIC0zNDcuNTUwNzgxIDM1NS43NSAtMzY1LjM0Mzc1IEMgMzUxLjAzMTI1IC0zODMuMTQ0NTMxIDM0NyAtNDAzLjAyMzQzOCAzNDMuNjU2MjUgLTQyNC45ODQzNzUgQyAzNDAuMzIwMzEyIC00NDYuOTUzMTI1IDMzOC42NTYyNSAtNDcyLjY3NTc4MSAzMzguNjU2MjUgLTUwMi4xNTYyNSBDIDMzOC42NTYyNSAtNTI3LjcxODc1IDM0MS43MTA5MzggLTU0OS4zOTQ1MzEgMzQ3LjgyODEyNSAtNTY3LjE4NzUgQyAzNTMuOTUzMTI1IC01ODQuOTg4MjgxIDM2MC45MDYyNSAtNjAwLjgzNTkzOCAzNjguNjg3NSAtNjE0LjczNDM3NSBDIDM3Ni40NzY1NjIgLTYyOC42NDA2MjUgMzgzLjQyOTY4OCAtNjQyLjEyNSAzODkuNTQ2ODc1IC02NTUuMTg3NSBDIDM5NS42NjAxNTYgLTY2OC4yNTc4MTIgMzk4LjcxODc1IC02ODIuODYzMjgxIDM5OC43MTg3NSAtNjk5IEMgMzk4LjcxODc1IC03MTYuMjM4MjgxIDM5NC40MDYyNSAtNzMyLjc4MTI1IDM4NS43ODEyNSAtNzQ4LjYyNSBDIDM3Ny4xNjQwNjIgLTc2NC40NzY1NjIgMzY0LjM3ODkwNiAtNzc3LjY4NzUgMzQ3LjQyMTg3NSAtNzg4LjI1IEMgMzMwLjQ2MDkzOCAtNzk4LjgxMjUgMzA5LjQ2ODc1IC04MDQuMDkzNzUgMjg0LjQzNzUgLTgwNC4wOTM3NSBDIDI1My44NTE1NjIgLTgwNC4wOTM3NSAyMjguMjczNDM4IC03OTYuNTgyMDMxIDIwNy43MDMxMjUgLTc4MS41NjI1IEMgMTg3LjEyODkwNiAtNzY2LjU1MDc4MSAxNzEuNTU0Njg4IC03NDcuNzg1MTU2IDE2MC45ODQzNzUgLTcyNS4yNjU2MjUgQyAxNTAuNDIxODc1IC03MDIuNzQyMTg4IDE0NS4xNDA2MjUgLTY3OS41MzEyNSAxNDUuMTQwNjI1IC02NTUuNjI1IEMgMTQ1LjE0MDYyNSAtNjI1LjU5Mzc1IDE0Ni44MDQ2ODggLTU5OS41OTM3NSAxNTAuMTQwNjI1IC01NzcuNjI1IEMgMTUzLjQ4NDM3NSAtNTU1LjY1NjI1IDE1Ny41MTU2MjUgLTUzNS42MzI4MTIgMTYyLjIzNDM3NSAtNTE3LjU2MjUgQyAxNjYuOTYwOTM4IC00OTkuNSAxNzEuNjkxNDA2IC00ODEuNTcwMzEyIDE3Ni40MjE4NzUgLTQ2My43ODEyNSBDIDE4MS4xNDg0MzggLTQ0NS45ODgyODEgMTg1LjE3OTY4OCAtNDI2LjEwOTM3NSAxODguNTE1NjI1IC00MDQuMTQwNjI1IEMgMTkxLjg0NzY1NiAtMzgyLjE3MTg3NSAxOTMuNTE1NjI1IC0zNTYuNDUzMTI1IDE5My41MTU2MjUgLTMyNi45ODQzNzUgQyAxOTMuNTE1NjI1IC0zMDEuMzk4NDM4IDE5MC40NTcwMzEgLTI3OS43MTA5MzggMTg0LjM0Mzc1IC0yNjEuOTIxODc1IEMgMTc4LjIyNjU2MiAtMjQ0LjEyODkwNiAxNzEuMjczNDM4IC0yMjguMjgxMjUgMTYzLjQ4NDM3NSAtMjE0LjM3NSBDIDE1NS43MDMxMjUgLTIwMC40Njg3NSAxNDguNzUzOTA2IC0xODYuOTc2NTYyIDE0Mi42NDA2MjUgLTE3My45MDYyNSBDIDEzNi41MjM0MzggLTE2MC44NDM3NSAxMzMuNDY4NzUgLTE0Ni4yNSAxMzMuNDY4NzUgLTEzMC4xMjUgWiBNIDEzMy40Njg3NSAtMTMwLjEyNSAiLz48L2c+PC9nPjwvZz48L2c+PC9nPjwvZz48L2c+PGcgY2xpcC1wYXRoPSJ1cmwoIzlmNWQ0ZjU3NWUpIj48ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAxMTI3LCA2NzQpIj48ZyBjbGlwLXBhdGg9InVybCgjYTk3OTBjODgzYikiPjxnIGZpbGw9IiM0OTAxMWIiIGZpbGwtb3BhY2l0eT0iMSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC44NzQwODgsIDk2LjMzMjA4OSkiPjxnPjxwYXRoIGQ9Ik0gOC4yMzQzNzUgLTc1LjkwNjI1IEMgOS43MzQzNzUgLTc3LjM3NSAxMS42OTUzMTIgLTc4LjEwOTM3NSAxNC4xMjUgLTc4LjEwOTM3NSBDIDE2LjU1MDc4MSAtNzguMTA5Mzc1IDE4LjUwNzgxMiAtNzcuMzc1IDIwIC03NS45MDYyNSBDIDIxLjUgLTc0LjQ0NTMxMiAyMi4yNSAtNzIuNTc4MTI1IDIyLjI1IC03MC4yOTY4NzUgQyAyMi4yNSAtNjcuOTQxNDA2IDIxLjUgLTY2LjA1MDc4MSAyMCAtNjQuNjI1IEMgMTguNTA3ODEyIC02My4xOTUzMTIgMTYuNTUwNzgxIC02Mi40ODQzNzUgMTQuMTI1IC02Mi40ODQzNzUgQyAxMS42OTUzMTIgLTYyLjQ4NDM3NSA5LjczNDM3NSAtNjMuMTk1MzEyIDguMjM0Mzc1IC02NC42MjUgQyA2LjczNDM3NSAtNjYuMDUwNzgxIDUuOTg0Mzc1IC02Ny45NDE0MDYgNS45ODQzNzUgLTcwLjI5Njg3NSBDIDUuOTg0Mzc1IC03Mi41NzgxMjUgNi43MzQzNzUgLTc0LjQ0NTMxMiA4LjIzNDM3NSAtNzUuOTA2MjUgWiBNIDIxLjUgMCBMIDYuNzM0Mzc1IDAgTCA2LjczNDM3NSAtNTYuOTIxODc1IEwgMjEuNSAtNTYuOTIxODc1IFogTSAyMS41IDAgIi8+PC9nPjwvZz48L2c+PGcgZmlsbD0iIzQ5MDExYiIgZmlsbC1vcGFjaXR5PSIxIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNC42MjQ0NTIsIDk2LjMzMjA4OSkiPjxnPjxwYXRoIGQ9Ik0gNTkuODEyNSAtNDIuNDg0Mzc1IEMgNjAuMDkzNzUgLTM5LjkxMDE1NiA2MC4yMzQzNzUgLTM2LjQ0NTMxMiA2MC4yMzQzNzUgLTMyLjA5Mzc1IEwgNjAuMjM0Mzc1IDAgTCA0NS40Njg3NSAwIEwgNDUuNDY4NzUgLTMwLjA2MjUgQyA0NS40Njg3NSAtMzMuNDE0MDYyIDQ1LjM5ODQzOCAtMzYuMDU0Njg4IDQ1LjI2NTYyNSAtMzcuOTg0Mzc1IEMgNDQuNzY1NjI1IC00NC42OTE0MDYgNDEuMTI1IC00OC4wNDY4NzUgMzQuMzQzNzUgLTQ4LjA0Njg3NSBDIDMwLjQ4ODI4MSAtNDguMDQ2ODc1IDI3LjM4MjgxMiAtNDYuMjQyMTg4IDI1LjAzMTI1IC00Mi42NDA2MjUgQyAyMi42NzU3ODEgLTM5LjAzNTE1NiAyMS41IC0zMy40ODgyODEgMjEuNSAtMjYgTCAyMS41IDAgTCA2LjczNDM3NSAwIEwgNi43MzQzNzUgLTU2LjkyMTg3NSBMIDIxLjUgLTU2LjkyMTg3NSBMIDIxLjUgLTQ3LjcxODc1IEwgMjUuODkwNjI1IC01NC40Njg3NSBDIDI5LjU5NzY1NiAtNTcuMTAxNTYyIDM0LjE2NDA2MiAtNTguNDIxODc1IDM5LjU5Mzc1IC01OC40MjE4NzUgQyA0NS41ODIwMzEgLTU4LjQyMTg3NSA1MC4zMDQ2ODggLTU3LjAzMTI1IDUzLjc2NTYyNSAtNTQuMjUgQyA1Ny4yMjI2NTYgLTUxLjQ2ODc1IDU5LjIzODI4MSAtNDcuNTQ2ODc1IDU5LjgxMjUgLTQyLjQ4NDM3NSBaIE0gNTkuODEyNSAtNDIuNDg0Mzc1ICIvPjwvZz48L2c+PC9nPjxnIGZpbGw9IiM0OTAxMWIiIGZpbGwtb3BhY2l0eT0iMSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODYuMzU2NzA1LCA5Ni4zMzIwODkpIj48Zz48cGF0aCBkPSJNIDI4LjM1OTM3NSAtNjEuNTMxMjUgTCAxNS4xODc1IC03NC4xNTYyNSBMIDI4LjQ2ODc1IC03NC4xNTYyNSBMIDM2LjcwMzEyNSAtNjEuNTMxMjUgWiBNIDU4LjQyMTg3NSAtMjkuNjQwNjI1IEMgNTguNDIxODc1IC0yNy41NjY0MDYgNTguMzQ3NjU2IC0yNS44OTA2MjUgNTguMjAzMTI1IC0yNC42MDkzNzUgTCAxNy43NjU2MjUgLTI0LjYwOTM3NSBDIDE4LjYxNzE4OCAtMTQuMTE3MTg4IDIzLjAwMzkwNiAtOC44NzUgMzAuOTIxODc1IC04Ljg3NSBDIDM0LjEyODkwNiAtOC44NzUgMzYuNzg1MTU2IC05LjcyNjU2MiAzOC44OTA2MjUgLTExLjQzNzUgQyA0MC45OTIxODggLTEzLjE1NjI1IDQyLjI5Njg3NSAtMTUuNTE1NjI1IDQyLjc5Njg3NSAtMTguNTE1NjI1IEwgNTcuNTYyNSAtMTguNTE1NjI1IEMgNTYuMTMyODEyIC0xMi4wMjM0MzggNTMuMDE1NjI1IC03LjA2NjQwNiA0OC4yMDMxMjUgLTMuNjQwNjI1IEMgNDMuMzkwNjI1IC0wLjIxMDkzOCAzNy41MjM0MzggMS41IDMwLjYwOTM3NSAxLjUgQyAyMi4zOTg0MzggMS41IDE1LjcyNjU2MiAtMS4wNDY4NzUgMTAuNTkzNzUgLTYuMTQwNjI1IEMgNS40NTcwMzEgLTExLjI0MjE4OCAyLjg5MDYyNSAtMTguNjEzMjgxIDIuODkwNjI1IC0yOC4yNSBDIDIuODkwNjI1IC0zNy4wOTM3NSA1LjU0Njg3NSAtNDQuMzMyMDMxIDEwLjg1OTM3NSAtNDkuOTY4NzUgQyAxNi4xNzE4NzUgLTU1LjYwMTU2MiAyMy4xNDQ1MzEgLTU4LjQyMTg3NSAzMS43ODEyNSAtNTguNDIxODc1IEMgNDAuMTI1IC01OC40MjE4NzUgNDYuNjQ4NDM4IC01NS42NzE4NzUgNTEuMzU5Mzc1IC01MC4xNzE4NzUgQyA1Ni4wNjY0MDYgLTQ0LjY3OTY4OCA1OC40MjE4NzUgLTM3LjgzNTkzOCA1OC40MjE4NzUgLTI5LjY0MDYyNSBaIE0gMzEuMTQwNjI1IC00OC4wNDY4NzUgQyAyMy43ODUxNTYgLTQ4LjA0Njg3NSAxOS40Njg3NSAtNDMuNDQxNDA2IDE4LjE4NzUgLTM0LjIzNDM3NSBMIDQzLjIzNDM3NSAtMzQuMjM0Mzc1IEMgNDIuMjM0Mzc1IC00My40NDE0MDYgMzguMjAzMTI1IC00OC4wNDY4NzUgMzEuMTQwNjI1IC00OC4wNDY4NzUgWiBNIDMxLjE0MDYyNSAtNDguMDQ2ODc1ICIvPjwvZz48L2c+PC9nPjxnIGZpbGw9IiM0OTAxMWIiIGZpbGwtb3BhY2l0eT0iMSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTQzLjQ4ODM0OSwgOTYuMzMyMDg5KSI+PGc+PHBhdGggZD0iTSAyNy4wNzgxMjUgLTU4LjQyMTg3NSBDIDMzLjY0MDYyNSAtNTguNDIxODc1IDM4Ljg3ODkwNiAtNTYuNzgxMjUgNDIuNzk2ODc1IC01My41IEMgNDYuNzIyNjU2IC01MC4yMTg3NSA0OS4wMDM5MDYgLTQ1Ljg2NzE4OCA0OS42NDA2MjUgLTQwLjQ1MzEyNSBMIDM0Ljg3NSAtNDAuNDUzMTI1IEMgMzMuODgyODEyIC00NS45NDE0MDYgMzAuOTYwOTM4IC00OC42ODc1IDI2LjEwOTM3NSAtNDguNjg3NSBDIDIzLjk2MDkzOCAtNDguNjg3NSAyMi4zMDA3ODEgLTQ4LjEzMjgxMiAyMS4xMjUgLTQ3LjAzMTI1IEMgMTkuOTQ1MzEyIC00NS45MjU3ODEgMTkuMzU5Mzc1IC00NC40NDUzMTIgMTkuMzU5Mzc1IC00Mi41OTM3NSBDIDE5LjM1OTM3NSAtNDAuNDQ1MzEyIDIwLjMyMDMxMiAtMzguNzM0Mzc1IDIyLjI1IC0zNy40NTMxMjUgQyAyNC4xNzU3ODEgLTM2LjE3MTg3NSAyNy41MzEyNSAtMzQuOTIxODc1IDMyLjMxMjUgLTMzLjcwMzEyNSBDIDM4LjUxOTUzMSAtMzIuMTI4OTA2IDQzLjE1NjI1IC0yOS45NTMxMjUgNDYuMjE4NzUgLTI3LjE3MTg3NSBDIDQ5LjI4OTA2MiAtMjQuMzkwNjI1IDUwLjgyODEyNSAtMjAuNTAzOTA2IDUwLjgyODEyNSAtMTUuNTE1NjI1IEMgNTAuODI4MTI1IC0xMC4wMjM0MzggNDguNjI4OTA2IC01LjgxNjQwNiA0NC4yMzQzNzUgLTIuODkwNjI1IEMgMzkuODQ3NjU2IDAuMDM1MTU2MiAzNC4yMzQzNzUgMS41IDI3LjM5MDYyNSAxLjUgQyAyMC4yNTM5MDYgMS41IDE0LjQ3MjY1NiAtMC4wNjY0MDYyIDEwLjA0Njg3NSAtMy4yMDMxMjUgQyA1LjYyODkwNiAtNi4zNDc2NTYgMy4wMzEyNSAtMTEuMDU0Njg4IDIuMjUgLTE3LjMyODEyNSBMIDE3LjAxNTYyNSAtMTcuMzI4MTI1IEMgMTcuNTg1OTM4IC0xNC4zMzU5MzggMTguODE2NDA2IC0xMi4wNzAzMTIgMjAuNzAzMTI1IC0xMC41MzEyNSBDIDIyLjU5NzY1NiAtOSAyNC44OTg0MzggLTguMjM0Mzc1IDI3LjYwOTM3NSAtOC4yMzQzNzUgQyAzMC4wOTc2NTYgLTguMjM0Mzc1IDMyLjEwOTM3NSAtOC43Njk1MzEgMzMuNjQwNjI1IC05Ljg0Mzc1IEMgMzUuMTc5Njg4IC0xMC45MTQwNjIgMzUuOTUzMTI1IC0xMi40NDUzMTIgMzUuOTUzMTI1IC0xNC40Mzc1IEMgMzUuOTUzMTI1IC0xNi42NTYyNSAzNC45MTQwNjIgLTE4LjQ1NzAzMSAzMi44NDM3NSAtMTkuODQzNzUgQyAzMC43ODEyNSAtMjEuMjM4MjgxIDI3LjI4NTE1NiAtMjIuNTM5MDYyIDIyLjM1OTM3NSAtMjMuNzUgQyAxNi41ODU5MzggLTI1LjE3NTc4MSAxMi4xNjQwNjIgLTI3LjIyNjU2MiA5LjA5Mzc1IC0yOS45MDYyNSBDIDYuMDMxMjUgLTMyLjU4MjAzMSA0LjUgLTM2LjIzODI4MSA0LjUgLTQwLjg3NSBDIDQuNSAtNDYuMjg5MDYyIDYuNTQ2ODc1IC01MC41NjY0MDYgMTAuNjQwNjI1IC01My43MDMxMjUgQyAxNC43NDIxODggLTU2Ljg0NzY1NiAyMC4yMjI2NTYgLTU4LjQyMTg3NSAyNy4wNzgxMjUgLTU4LjQyMTg3NSBaIE0gMjcuMDc4MTI1IC01OC40MjE4NzUgIi8+PC9nPjwvZz48L2c+PGcgZmlsbD0iIzQ5MDExYiIgZmlsbC1vcGFjaXR5PSIxIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjg3NDA4OCwgMTg0LjYzNDc5OSkiPjxnPjxwYXRoIGQ9Ik0gMTAuNzAzMTI1IC01MC4xMjUgQyAxNS45MTAxNTYgLTU1LjY1NjI1IDIzLjE0ODQzOCAtNTguNDIxODc1IDMyLjQyMTg3NSAtNTguNDIxODc1IEMgNDEuNjkxNDA2IC01OC40MjE4NzUgNDguOTI5Njg4IC01NS42NTYyNSA1NC4xNDA2MjUgLTUwLjEyNSBDIDU5LjM0NzY1NiAtNDQuNjAxNTYyIDYxLjk1MzEyNSAtMzcuMzgyODEyIDYxLjk1MzEyNSAtMjguNDY4NzUgQyA2MS45NTMxMjUgLTE5LjYxMzI4MSA1OS4zNDc2NTYgLTEyLjQwNjI1IDU0LjE0MDYyNSAtNi44NDM3NSBDIDQ4LjkyOTY4OCAtMS4yODEyNSA0MS42OTE0MDYgMS41IDMyLjQyMTg3NSAxLjUgQyAyMy4xNDg0MzggMS41IDE1LjkxMDE1NiAtMS4yODEyNSAxMC43MDMxMjUgLTYuODQzNzUgQyA1LjQ5MjE4OCAtMTIuNDA2MjUgMi44OTA2MjUgLTE5LjYxMzI4MSAyLjg5MDYyNSAtMjguNDY4NzUgQyAyLjg5MDYyNSAtMzcuMzgyODEyIDUuNDkyMTg4IC00NC42MDE1NjIgMTAuNzAzMTI1IC01MC4xMjUgWiBNIDIxLjk4NDM3NSAtMTQuMDYyNSBDIDI0LjUxNTYyNSAtMTAuNjAxNTYyIDI3Ljk5MjE4OCAtOC44NzUgMzIuNDIxODc1IC04Ljg3NSBDIDM2Ljg0NzY1NiAtOC44NzUgNDAuMzI4MTI1IC0xMC42MDE1NjIgNDIuODU5Mzc1IC0xNC4wNjI1IEMgNDUuMzkwNjI1IC0xNy41MzEyNSA0Ni42NTYyNSAtMjIuMzI4MTI1IDQ2LjY1NjI1IC0yOC40NTMxMjUgQyA0Ni42NTYyNSAtMzQuNTg1OTM4IDQ1LjM5MDYyNSAtMzkuMzgyODEyIDQyLjg1OTM3NSAtNDIuODQzNzUgQyA0MC4zMjgxMjUgLTQ2LjMxMjUgMzYuODQ3NjU2IC00OC4wNDY4NzUgMzIuNDIxODc1IC00OC4wNDY4NzUgQyAyNy45OTIxODggLTQ4LjA0Njg3NSAyNC41MTU2MjUgLTQ2LjMxMjUgMjEuOTg0Mzc1IC00Mi44NDM3NSBDIDE5LjQ1MzEyNSAtMzkuMzgyODEyIDE4LjE4NzUgLTM0LjU4NTkzOCAxOC4xODc1IC0yOC40NTMxMjUgQyAxOC4xODc1IC0yMi4zMjgxMjUgMTkuNDUzMTI1IC0xNy41MzEyNSAyMS45ODQzNzUgLTE0LjA2MjUgWiBNIDIxLjk4NDM3NSAtMTQuMDYyNSAiLz48L2c+PC9nPjwvZz48ZyBmaWxsPSIjNDkwMTFiIiBmaWxsLW9wYWNpdHk9IjEiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYxLjAwMTQ3NSwgMTg0LjYzNDc5OSkiPjxnPjxwYXRoIGQ9Ik0gNTkuMjgxMjUgLTU2LjkyMTg3NSBMIDU5LjI4MTI1IDAgTCA0NC41MTU2MjUgMCBMIDQ0LjUxNTYyNSAtOS42MjUgTCA0MC4xMjUgLTIuMzU5Mzc1IEMgMzYuMjY5NTMxIDAuMjEwOTM4IDMxLjcwMzEyNSAxLjUgMjYuNDIxODc1IDEuNSBDIDIwLjc4NTE1NiAxLjUgMTYuMjAzMTI1IDAuMTI4OTA2IDEyLjY3MTg3NSAtMi42MDkzNzUgQyA5LjE0ODQzOCAtNS4zNTkzNzUgNy4wMzEyNSAtOC44MDQ2ODggNi4zMTI1IC0xMi45NTMxMjUgQyA1Ljk1NzAzMSAtMTUuMzY3MTg4IDUuNzgxMjUgLTE4LjgyODEyNSA1Ljc4MTI1IC0yMy4zMjgxMjUgTCA1Ljc4MTI1IC01Ni45MjE4NzUgTCAyMC41NDY4NzUgLTU2LjkyMTg3NSBMIDIwLjU0Njg3NSAtMjYuNDIxODc1IEMgMjAuNTQ2ODc1IC0yMy43ODUxNTYgMjAuNjg3NSAtMjEuMTg3NSAyMC45Njg3NSAtMTguNjI1IEMgMjEuNzU3ODEyIC0xMi4xOTUzMTIgMjUuNDM3NSAtOC45ODQzNzUgMzIgLTguOTg0Mzc1IEMgMzUuODQzNzUgLTguOTg0Mzc1IDM4Ljg5MDYyNSAtMTAuNTg1OTM4IDQxLjE0MDYyNSAtMTMuNzk2ODc1IEMgNDMuMzkwNjI1IC0xNy4wMTU2MjUgNDQuNTE1NjI1IC0yMS43MjI2NTYgNDQuNTE1NjI1IC0yNy45MjE4NzUgTCA0NC41MTU2MjUgLTU2LjkyMTg3NSBaIE0gNTkuMjgxMjUgLTU2LjkyMTg3NSAiLz48L2c+PC9nPjwvZz48ZyBmaWxsPSIjNDkwMTFiIiBmaWxsLW9wYWNpdHk9IjEiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMi40MTI4MDQsIDE4NC42MzQ3OTkpIj48Zz48cGF0aCBkPSJNIDM5Ljc5Njg3NSAwIEwgMzguNzM0Mzc1IC04LjM0Mzc1IEwgMzUuOTUzMTI1IC0yLjI1IEMgMzIuMjQyMTg4IDAuMjUgMjcuNTM1MTU2IDEuNSAyMS44MjgxMjUgMS41IEMgMTYuNjE3MTg4IDEuNSAxMi4yNjU2MjUgMC4wMzUxNTYyIDguNzY1NjI1IC0yLjg5MDYyNSBDIDUuMjczNDM4IC01LjgxNjQwNiAzLjUzMTI1IC05Ljg4MjgxMiAzLjUzMTI1IC0xNS4wOTM3NSBDIDMuNTMxMjUgLTIxLjM2MzI4MSA2LjE4NzUgLTI2LjE5MTQwNiAxMS41IC0yOS41NzgxMjUgQyAxNi44MTI1IC0zMi45NzI2NTYgMjQuNjAxNTYyIC0zNC42NzE4NzUgMzQuODc1IC0zNC42NzE4NzUgTCAzOC41MTU2MjUgLTM0LjY3MTg3NSBMIDM4LjUxNTYyNSAtMzUuODQzNzUgQyAzOC41MTU2MjUgLTM4LjEyNSAzOC40NDUzMTIgLTM5LjkwNjI1IDM4LjMxMjUgLTQxLjE4NzUgQyAzNy44MTI1IC00NS43NTc4MTIgMzQuODgyODEyIC00OC4wNDY4NzUgMjkuNTMxMjUgLTQ4LjA0Njg3NSBDIDIzLjYxMzI4MSAtNDguMDQ2ODc1IDIwLjQ0MTQwNiAtNDQuODMyMDMxIDIwLjAxNTYyNSAtMzguNDA2MjUgTCA1LjY3MTg3NSAtMzguMzEyNSBDIDUuODc4OTA2IC00NC41ODIwMzEgOC4yNSAtNDkuNSAxMi43ODEyNSAtNTMuMDYyNSBDIDE3LjMxMjUgLTU2LjYzMjgxMiAyMy4wNzAzMTIgLTU4LjQyMTg3NSAzMC4wNjI1IC01OC40MjE4NzUgQyA0NC4yNTc4MTIgLTU4LjQyMTg3NSA1MS44NTkzNzUgLTUyLjgyMDMxMiA1Mi44NTkzNzUgLTQxLjYyNSBDIDUzLjA2NjQwNiAtMzguOTE0MDYyIDUzLjE3MTg3NSAtMzUuOTg4MjgxIDUzLjE3MTg3NSAtMzIuODQzNzUgTCA1My4xNzE4NzUgLTE0LjQzNzUgQyA1My4xNzE4NzUgLTEwLjA5Mzc1IDUzLjUzMTI1IC01LjI4MTI1IDU0LjI1IDAgWiBNIDI3LjUgLTguODc1IEMgMzAuNjMyODEyIC04Ljg3NSAzMy4yNTM5MDYgLTkuOTQxNDA2IDM1LjM1OTM3NSAtMTIuMDc4MTI1IEMgMzcuNDYwOTM4IC0xNC4yMjI2NTYgMzguNTE1NjI1IC0xNy4xODc1IDM4LjUxNTYyNSAtMjAuOTY4NzUgTCAzOC41MTU2MjUgLTI1LjU3ODEyNSBDIDI1LjM5MDYyNSAtMjYuNTAzOTA2IDE4LjgyODEyNSAtMjMuMzk4NDM4IDE4LjgyODEyNSAtMTYuMjY1NjI1IEMgMTguODI4MTI1IC0xMS4zMzU5MzggMjEuNzE4NzUgLTguODc1IDI3LjUgLTguODc1IFogTSAyNy41IC04Ljg3NSAiLz48L2c+PC9nPjwvZz48ZyBmaWxsPSIjNDkwMTFiIiBmaWxsLW9wYWNpdHk9IjEiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3Ny44MzI1MjQsIDE4NC42MzQ3OTkpIj48Zz48cGF0aCBkPSJNIDEzLjc5Njg3NSAtNzguMTA5Mzc1IEMgMTkuMTQ4NDM4IC03OC4xMDkzNzUgMjEuODI4MTI1IC03NS41MDM5MDYgMjEuODI4MTI1IC03MC4yOTY4NzUgQyAyMS44MjgxMjUgLTY1LjA4NTkzOCAxOS4xNDg0MzggLTYyLjQ4NDM3NSAxMy43OTY4NzUgLTYyLjQ4NDM3NSBDIDguMzc4OTA2IC02Mi40ODQzNzUgNS42NzE4NzUgLTY1LjA4NTkzOCA1LjY3MTg3NSAtNzAuMjk2ODc1IEMgNS42NzE4NzUgLTc1LjUwMzkwNiA4LjM3ODkwNiAtNzguMTA5Mzc1IDEzLjc5Njg3NSAtNzguMTA5Mzc1IFogTSAyMS4wNzgxMjUgLTU2LjkyMTg3NSBMIDIxLjA3ODEyNSAxLjI4MTI1IEMgMjEuMDc4MTI1IDMuMjgxMjUgMjEuMDAzOTA2IDUuNTYyNSAyMC44NTkzNzUgOC4xMjUgQyAyMC41MDM5MDYgMTIuODMyMDMxIDE4LjgyODEyNSAxNi4zOTg0MzggMTUuODI4MTI1IDE4LjgyODEyNSBDIDEyLjgzNTkzOCAyMS4yNTM5MDYgOC4yMDMxMjUgMjIuNDY4NzUgMS45MjE4NzUgMjIuNDY4NzUgQyAtMC4wNjY0MDYyIDIyLjQ2ODc1IC0xLjg4MjgxMiAyMi4zNjMyODEgLTMuNTMxMjUgMjIuMTU2MjUgTCAtMy41MzEyNSAxMS42NTYyNSBDIC0wLjMyMDMxMiAxMS45NDUzMTIgMi4wMzEyNSAxMS42OTUzMTIgMy41MzEyNSAxMC45MDYyNSBDIDUuMDMxMjUgMTAuMTI1IDUuOTIxODc1IDguNjI4OTA2IDYuMjAzMTI1IDYuNDIxODc1IEMgNi4zNDc2NTYgNC40MjE4NzUgNi40MjE4NzUgMi43ODEyNSA2LjQyMTg3NSAxLjUgTCA2LjQyMTg3NSAtNTYuOTIxODc1IFogTSAyMS4wNzgxMjUgLTU2LjkyMTg3NSAiLz48L2c+PC9nPjwvZz48ZyBmaWxsPSIjNDkwMTFiIiBmaWxsLW9wYWNpdHk9IjEiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMC45NDA5MTcsIDE4NC42MzQ3OTkpIj48Zz48cGF0aCBkPSJNIDguMjM0Mzc1IC03NS45MDYyNSBDIDkuNzM0Mzc1IC03Ny4zNzUgMTEuNjk1MzEyIC03OC4xMDkzNzUgMTQuMTI1IC03OC4xMDkzNzUgQyAxNi41NTA3ODEgLTc4LjEwOTM3NSAxOC41MDc4MTIgLTc3LjM3NSAyMCAtNzUuOTA2MjUgQyAyMS41IC03NC40NDUzMTIgMjIuMjUgLTcyLjU3ODEyNSAyMi4yNSAtNzAuMjk2ODc1IEMgMjIuMjUgLTY3Ljk0MTQwNiAyMS41IC02Ni4wNTA3ODEgMjAgLTY0LjYyNSBDIDE4LjUwNzgxMiAtNjMuMTk1MzEyIDE2LjU1MDc4MSAtNjIuNDg0Mzc1IDE0LjEyNSAtNjIuNDg0Mzc1IEMgMTEuNjk1MzEyIC02Mi40ODQzNzUgOS43MzQzNzUgLTYzLjE5NTMxMiA4LjIzNDM3NSAtNjQuNjI1IEMgNi43MzQzNzUgLTY2LjA1MDc4MSA1Ljk4NDM3NSAtNjcuOTQxNDA2IDUuOTg0Mzc1IC03MC4yOTY4NzUgQyA1Ljk4NDM3NSAtNzIuNTc4MTI1IDYuNzM0Mzc1IC03NC40NDUzMTIgOC4yMzQzNzUgLTc1LjkwNjI1IFogTSAyMS41IDAgTCA2LjczNDM3NSAwIEwgNi43MzQzNzUgLTU2LjkyMTg3NSBMIDIxLjUgLTU2LjkyMTg3NSBaIE0gMjEuNSAwICIvPjwvZz48L2c+PC9nPjxnIGZpbGw9IiM0OTAxMWIiIGZpbGwtb3BhY2l0eT0iMSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjI0LjY5MTI4MiwgMTg0LjYzNDc5OSkiPjxnPjxwYXRoIGQ9Ik0gNDAuNTQ2ODc1IC01OC40MjE4NzUgQyA0OC4zOTg0MzggLTU4LjQyMTg3NSA1NC41ODU5MzggLTU1Ljc0MjE4OCA1OS4xMDkzNzUgLTUwLjM5MDYyNSBDIDYzLjY0MDYyNSAtNDUuMDQ2ODc1IDY1LjkwNjI1IC0zOC4wOTM3NSA2NS45MDYyNSAtMjkuNTMxMjUgQyA2NS45MDYyNSAtMTkuNjg3NSA2My4zMDA3ODEgLTEyLjA1MDc4MSA1OC4wOTM3NSAtNi42MjUgQyA1Mi44OTQ1MzEgLTEuMjA3MDMxIDQ2LjQwNjI1IDEuNSAzOC42MjUgMS41IEMgMzIuNzgxMjUgMS41IDI4LjMyMDMxMiAwLjQyNTc4MSAyNS4yNSAtMS43MTg3NSBMIDIxLjUgLTcuNTkzNzUgTCAyMS41IDAgTCA2LjczNDM3NSAwIEwgNi43MzQzNzUgLTc4LjY0MDYyNSBMIDIxLjUgLTc4LjY0MDYyNSBMIDIxLjUgLTQ4LjI1IEwgMjUuNzgxMjUgLTU0LjQ2ODc1IEMgMjkuMDYyNSAtNTcuMTAxNTYyIDMzLjk4NDM3NSAtNTguNDIxODc1IDQwLjU0Njg3NSAtNTguNDIxODc1IFogTSAzNS43MzQzNzUgLTguODc1IEMgNDAuMTYwMTU2IC04Ljg3NSA0My43NDIxODggLTEwLjU2NjQwNiA0Ni40ODQzNzUgLTEzLjk1MzEyNSBDIDQ5LjIzNDM3NSAtMTcuMzQ3NjU2IDUwLjYwOTM3NSAtMjIuMjE4NzUgNTAuNjA5Mzc1IC0yOC41NjI1IEMgNTAuNjA5Mzc1IC0zNC40MTQwNjIgNDkuMzA0Njg4IC0zOS4xMjUgNDYuNzAzMTI1IC00Mi42ODc1IEMgNDQuMDk3NjU2IC00Ni4yNTc4MTIgNDAuNjE3MTg4IC00OC4wNDY4NzUgMzYuMjY1NjI1IC00OC4wNDY4NzUgQyAzMS44NDc2NTYgLTQ4LjA0Njg3NSAyOC4yODEyNSAtNDYuNTMxMjUgMjUuNTYyNSAtNDMuNSBDIDIyLjg1MTU2MiAtNDAuNDY4NzUgMjEuNSAtMzUuNjcxODc1IDIxLjUgLTI5LjEwOTM3NSBMIDIxLjUgLTI2LjQyMTg3NSBDIDIxLjUgLTIwLjQyOTY4OCAyMi44OTA2MjUgLTE2LjAwNzgxMiAyNS42NzE4NzUgLTEzLjE1NjI1IEMgMjguNDYwOTM4IC0xMC4zMDA3ODEgMzEuODE2NDA2IC04Ljg3NSAzNS43MzQzNzUgLTguODc1IFogTSAzNS43MzQzNzUgLTguODc1ICIvPjwvZz48L2c+PC9nPjwvZz48L2c+PC9nPjwvZz48L2c+PC9zdmc+" style="width:80px;height:auto;object-fit:contain;" alt="Inès Ouajib logo">
+    </div>
+
+    <div class="cover-center">
+      <div class="cover-eyebrow">Proposition Commerciale</div>
+      <div class="cover-title">
+        <em>Stratégie Marketing</em>
+        <strong>L'Instant Glow</strong>
+      </div>
+      <div class="cover-client">
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Client</span>
+          <span class="cover-meta-value">L'Instant Glow — Sihem</span>
+        </div>
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Secteur</span>
+          <span class="cover-meta-value">Institut d'esthétique</span>
+        </div>
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Localisation</span>
+          <span class="cover-meta-value">Prévessin-Moëns · Pays de Gex</span>
+        </div>
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Préparée par</span>
+          <span class="cover-meta-value">Inès Ouajib</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-bottom">
+      <span class="cover-bottom-note">Document confidentiel · À usage exclusif de L'Instant Glow</span>
+      <span class="cover-badge">Confidentiel · Mai 2026</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ DOCUMENT ══════════════ -->
+<div class="doc-wrap">
+
+  <!-- ─── 01 PORTRAIT ─── -->
+  <div class="section-divider" style="margin-top:0">
+    <div class="section-num">01</div>
+    <div class="section-meta">
+      <div class="section-tag">Portrait de l'entreprise</div>
+      <div class="section-title">L'Instant Glow — Qui êtes-vous aujourd'hui</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <p>L'Instant Glow est un institut d'esthétique fondé par Sihem, situé à Prévessin-Moëns (Ain). Positionné sur un segment <strong>premium accessible</strong>, l'institut bénéficie d'une zone de chalandise naturelle sur le Pays de Gex, la Suisse romande et la Haute-Savoie — une localisation stratégique à fort pouvoir d'achat, à quelques kilomètres de Genève.</p>
+    </div>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi-box">
+      <div class="kpi-num">5.0</div>
+      <div class="kpi-label">Note Planity<br>(36 avis vérifiés)</div>
+    </div>
+    <div class="kpi-box">
+      <div class="kpi-num">4</div>
+      <div class="kpi-label">Collaboratrices<br>actives</div>
+    </div>
+    <div class="kpi-box">
+      <div class="kpi-num">6j/7</div>
+      <div class="kpi-label">Ouverture<br>mar–dim, 10h–19h</div>
+    </div>
+    <div class="kpi-box">
+      <div class="kpi-num">13+</div>
+      <div class="kpi-label">Catégories de<br>prestations</div>
+    </div>
+  </div>
+
+  <div class="sep"><div class="sep-line"></div><span class="sep-label">Prestations & Tarifs</span><div class="sep-line"></div></div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">🎨 Regard & Ongles</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Extension de cils — Volume russe 85€ / Mixte 75€ / Fox eyes 90€</li>
+          <li>Rehaussement cils — simple 50€ / + teinture 60€</li>
+          <li>Browlift — simple 60€ / + teinture + épilation 75€</li>
+          <li>Ongles gel, capsule, semi-permanent — 50€ à 75€</li>
+          <li>Beauté des pieds + pédi spa — 55€ à 85€</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">💆 Corps & Bien-être</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Massage relaxant 1h — 90€ · tonifiant — 95€</li>
+          <li>Drainage lymphatique (méthode Renata França) — 70–120€/séance</li>
+          <li>Madérothérapie Body Sculpt — 70–120€/séance</li>
+          <li>Forfait 6 séances drainage ou madéro — 600€ (paiement en 3x dispo)</li>
+          <li>Spray tan — 30€ à 50€ selon zone</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">✨ Visage & Éclat</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Nettoyage de peau complet — 60€</li>
+          <li>Soin hydratant éclat — 45€ · Soin purifiant — 52€</li>
+          <li>Lifting coréen fil de soie & collagène — 70€</li>
+          <li>Blanchiment dentaire extra White — 145€ / 2 séances 250€</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">⚡ Épilation & UV</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Épilation sourcils 20€ · Lèvres/Menton 15€ · Visage complet 32€</li>
+          <li>Jambes complètes 40€ · Aisselles 25€</li>
+          <li>Épilation homme (torse, dos, sourcils…)</li>
+          <li>UV en séances de 10 à 30 min — 10€ à 30€</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <p><strong>Points forts différenciateurs :</strong> Note client excellente 5.0/5 sur Planity, reflet d'une expérience soignée et d'une équipe à l'écoute. Gamme full-service unique dans la zone — regard, ongles, corps, blanchiment dentaire — qui permet à chaque cliente de tout trouver en un seul lieu. L'ouverture le dimanche, rare localement, constitue un avantage concurrentiel réel pour une clientèle active et frontalière.</p>
+  </div>
+
+  <!-- ─── 02 ÉTUDE DE MARCHÉ ─── -->
+  <div class="section-divider">
+    <div class="section-num">02</div>
+    <div class="section-meta">
+      <div class="section-tag">Étude de marché</div>
+      <div class="section-title">Le marché de la beauté dans le Pays de Gex</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <p>Le Pays de Gex est une zone économiquement atypique en France : frontalière avec la Suisse, elle concentre une population avec un pouvoir d'achat parmi les plus élevés du pays, composée de fonctionnaires internationaux (ONU, CERN, OMS), de cadres expatriés et de résidents transfrontaliers travaillant à Genève. La demande en services beauté premium est structurellement forte — et la concurrence, bien que présente, reste accessible pour un institut bien positionné.</p>
+    </div>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi-box">
+      <div class="kpi-num" style="font-size:1.6rem">~110k</div>
+      <div class="kpi-label">Habitants dans<br>le Pays de Gex</div>
+    </div>
+    <div class="kpi-box">
+      <div class="kpi-num" style="font-size:1.6rem">35%</div>
+      <div class="kpi-label">Population frontalière<br>(revenus suisses)</div>
+    </div>
+    <div class="kpi-box">
+      <div class="kpi-num" style="font-size:1.6rem">+8%</div>
+      <div class="kpi-label">Croissance marché<br>beauté 2023–2025</div>
+    </div>
+    <div class="kpi-box">
+      <div class="kpi-num" style="font-size:1.6rem">2x</div>
+      <div class="kpi-label">Dépenses beauté vs<br>moyenne nationale</div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">📈 Tendances portantes</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Soins bien-être holistiques — drainage lymphatique, madérothérapie, massages en forte demande post-Covid</li>
+          <li>Beauté du regard — extensions et rehaussement de cils en croissance continue</li>
+          <li>Blanchiment dentaire — forte demande chez les 25–45 ans</li>
+          <li>Bronzage sans UV — spray tan en montée, clientèle sensibilisée aux risques UV</li>
+          <li>Réservation en ligne — 70% des RDV beauté pris hors heures de bureau</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">👥 Profil clientèle cible</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Femmes 25–50 ans, actives, CSP+ à CSP++</li>
+          <li>Frontalières travaillant à Genève, habituées aux hauts standards de qualité</li>
+          <li>Résidentes de Prévessin-Moëns, Ferney-Voltaire, Saint-Genis-Pouilly, Thoiry</li>
+          <li>Sensibles à l'esthétique visuelle et aux avis en ligne avant réservation</li>
+          <li>Actives sur Instagram et Google pour découvrir les instituts locaux</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sep"><div class="sep-line"></div><span class="sep-label">Analyse PESTEL</span><div class="sep-line"></div></div>
+  <div style="border-radius:10px;overflow:hidden;margin-bottom:1rem;">
+    <div class="analysis-row"><div class="analysis-label">P — Politique</div><div class="analysis-content">Réglementation française sur les soins esthétiques (diplômes, hygiène, équipements). Politique transfrontalière France-Suisse stable — facilite la mobilité de la clientèle genevoise.</div></div>
+    <div class="analysis-row"><div class="analysis-label">E — Économique</div><div class="analysis-content">Zone à fort pouvoir d'achat : revenus suisses (CHF), salaires CERN/ONU. Taux de change CHF/EUR favorable — les prestations françaises paraissent accessibles pour les frontaliers. Inflation générale sur les produits cosmétiques et les loyers commerciaux.</div></div>
+    <div class="analysis-row"><div class="analysis-label">S — Social</div><div class="analysis-content">Croissance de la demande de bien-être holistique post-Covid. Tendance forte au self-care et aux soins corporels chez les 25–45 ans. Population jeune et active dans le Pays de Gex, en forte croissance démographique. Sensibilité accrue aux avis en ligne et à l'expérience client premium.</div></div>
+    <div class="analysis-row"><div class="analysis-label">T — Technologique</div><div class="analysis-content">Planity comme standard de réservation en ligne dans le secteur beauté. Instagram incontournable pour l'acquisition locale de clientèle beauté. CRM et outils d'automatisation accessibles aux TPE. Meta Ads : ciblage géolocalisé précis — levier puissant pour le Pays de Gex.</div></div>
+    <div class="analysis-row"><div class="analysis-label">E — Environnemental</div><div class="analysis-content">Montée en puissance des cosmétiques naturels et cruelty-free. Spray tan positionné comme alternative saine aux UV — argument différenciateur. Attente croissante pour des pratiques éco-responsables en salon.</div></div>
+    <div class="analysis-row"><div class="analysis-label">L — Légal</div><div class="analysis-content">RGPD : obligations de collecte et traitement des données clients (consentement explicite requis). Réglementation sur le blanchiment dentaire (réservé aux esthéticiennes diplômées). Normes hygiène et sécurité dans les instituts de beauté (ANSM).</div></div>
+  </div>
+
+  <div class="sep"><div class="sep-line"></div><span class="sep-label">Les 5 forces de Porter</span><div class="sep-line"></div></div>
+  <div style="border-radius:10px;overflow:hidden;margin-bottom:1rem;">
+    <div class="analysis-row"><div class="analysis-label">1. Nouveaux entrants</div><div class="analysis-content"><strong>Force : MODÉRÉE</strong> — Barrières à l'entrée faibles (local + diplôme). Zone attractive qui attire régulièrement de nouveaux instituts. L'Instant Glow se protège par sa note client excellente, son offre full-service et sa gamme étendue — difficile à répliquer rapidement.</div></div>
+    <div class="analysis-row"><div class="analysis-label">2. Pouvoir des clients</div><div class="analysis-content"><strong>Force : ÉLEVÉE</strong> — Clientèle exigeante, habituée aux hauts standards. Forte mobilité — peuvent facilement changer d'institut. Les avis en ligne ont un poids décisif dans le choix. À compenser par une expérience client irréprochable et la fidélisation.</div></div>
+    <div class="analysis-row"><div class="analysis-label">3. Pouvoir des fournisseurs</div><div class="analysis-content"><strong>Force : FAIBLE</strong> — Marché des fournisseurs cosmétiques très fragmenté — nombreuses alternatives. Pas de dépendance critique à un fournisseur unique. Opportunité de valoriser des marques premium pour renforcer le positionnement.</div></div>
+    <div class="analysis-row"><div class="analysis-label">4. Substitution</div><div class="analysis-content"><strong>Force : MODÉRÉE</strong> — Instituts accessibles depuis Genève en moins de 15 minutes — mais à des tarifs en CHF nettement supérieurs. Produits cosmétiques DIY en essor — ne remplacent pas l'expertise technique. Tendance massage à domicile — risque limité sur le positionnement premium.</div></div>
+    <div class="analysis-row"><div class="analysis-label">5. Intensité concurrentielle</div><div class="analysis-content"><strong>Force : MODÉRÉE</strong> — Quelques acteurs bien installés sur la zone, mais aucun avec une offre aussi complète. L'Instant Glow est le seul à combiner regard + corps + bien-être + blanchiment. Avantage compétitif durable si la notoriété digitale est construite rapidement.</div></div>
+  </div>
+
+  <div class="sep"><div class="sep-line"></div><span class="sep-label">Analyse SWOT</span><div class="sep-line"></div></div>
+  <div class="swot-grid">
+    <div class="swot-cell">
+      <div class="swot-cell-label forces">Forces</div>
+      <ul>
+        <li>Note client excellente 5.0/5 sur Planity (36 avis vérifiés)</li>
+        <li>Gamme de prestations très complète et diversifiée</li>
+        <li>Forfaits multi-séances déjà en place (paiement en 3x)</li>
+        <li>4 collaboratrices actives — capacité d'accueil réelle</li>
+        <li>Ouverture le dimanche — avantage concurrentiel</li>
+        <li>Réservation en ligne active via Planity</li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-cell-label faiblesses">Faiblesses</div>
+      <ul>
+        <li>Instagram peu structuré — pas de captions ni hashtags</li>
+        <li>Aucun fichier client centralisé ni CRM</li>
+        <li>Pas de programme de fidélité formalisé</li>
+        <li>Pas de campagnes mailing ou de communication entre les visites</li>
+        <li>Pas de packs cross-catégories (cils + ongles + soin visage)</li>
+        <li>Aucun suivi des indicateurs de performance — pas de KPIs</li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-cell-label opportunites">Opportunités</div>
+      <ul>
+        <li>Zone transfrontalière à très fort pouvoir d'achat, sous-exploitée</li>
+        <li>Très peu de concurrents avec une offre aussi complète localement</li>
+        <li>Marché local en croissance (nouveaux résidents, expansion du Pays de Gex)</li>
+        <li>Partenariats avec salons coiffure, yoga/pilates, maquilleuses pro, wedding planners</li>
+        <li>Ouverture vers le mailing, la fidélisation automatisée et les Meta Ads</li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-cell-label menaces">Menaces</div>
+      <ul>
+        <li>Entrée de nouveaux acteurs beauty sur une zone attractive</li>
+        <li>Volatilité de l'algorithme Instagram sans stratégie éditoriale solide</li>
+        <li>Inflation sur les coûts de fonctionnement (produits, loyer, charges)</li>
+        <li>Réglementation RGPD : obligations de collecte des données clients</li>
+        <li>Exigences croissantes d'une clientèle habituée aux hauts standards suisses</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ─── 03 BENCHMARK ─── -->
+  <div class="section-divider">
+    <div class="section-num">03</div>
+    <div class="section-meta">
+      <div class="section-tag">Benchmark concurrentiel</div>
+      <div class="section-title">L'Instant Glow face à la concurrence locale</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <p>Quatre acteurs principaux opèrent sur la zone Prévessin-Moëns / Pays de Gex. L'Instant Glow se distingue par la complétude de son offre et sa note client excellente — mais accuse un retard de notoriété digitale que la stratégie en cours vise à combler.</p>
+    </div>
+  </div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Institut</th>
+        <th>Note / Avis</th>
+        <th>Spécialité</th>
+        <th>Forces</th>
+        <th>Faiblesses</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="highlight-row">
+        <td><strong>✦ L'Instant Glow — NOUS</strong><br><span style="font-size:0.72rem;opacity:0.7">Prévessin-Moëns</span></td>
+        <td>5.0 / 36 avis (Planity)</td>
+        <td>Full-service : cils, ongles, soins corps, madéro, blanchiment</td>
+        <td>Offre la plus complète, note excellente, ouverture dimanche, résa en ligne, forfaits</td>
+        <td>CRM absent, 0 mailing, aucun KPI, Instagram à structurer</td>
+      </tr>
+      <tr>
+        <td><strong>Belle Allure by Khadija</strong><br><span style="font-size:0.72rem;color:var(--muted)">Prévessin-Moëns</span></td>
+        <td>4.8 / 720+ avis Google</td>
+        <td>Beauté du regard, microblading, hammam privatisé, maquillage mariée</td>
+        <td>Très fort référencement Google, hammam unique, positionnement luxe oriental</td>
+        <td>Moins complet sur bien-être corporel, pas de madéro</td>
+      </tr>
+      <tr>
+        <td><strong>Samantha Beauty House</strong><br><span style="font-size:0.72rem;color:var(--muted)">Prévessin-Moëns</span></td>
+        <td>5.0 / 58 avis</td>
+        <td>Maquillage, rehaussement cils, teinture sourcils</td>
+        <td>Positionnement sur mesure, expérience personnalisée</td>
+        <td>Offre plus restreinte, moins de visibilité digitale</td>
+      </tr>
+      <tr>
+        <td><strong>Ingrit Esthétique</strong><br><span style="font-size:0.72rem;color:var(--muted)">Prévessin-Moëns</span></td>
+        <td>4.8 / 10 avis</td>
+        <td>Épilation laser, spécialiste épilation définitive</td>
+        <td>Positionnement médical, crédibilité, tarifs premium assumés</td>
+        <td>Spécialiste unique — ne concurrence pas sur l'ensemble des prestations</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight">
+    <p><strong>Conclusion benchmark :</strong> L'Instant Glow est le seul institut de la zone à proposer à la fois les soins du regard, le corps, le bien-être sculpté, le blanchiment dentaire et les ongles dans un même espace. Une offre full-service unique localement. L'enjeu est désormais de la faire connaître.</p>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">✅ Différenciateurs à activer</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Pôle bien-être sculpté — drainage lymphatique + madérothérapie</li>
+          <li>Ouverture dimanche — rare dans la zone, à valoriser en communication</li>
+          <li>Note client excellente 5.0 — à afficher partout : Instagram, communication client</li>
+          <li>Full-service en un lieu — "tout en un", gain de temps pour les clientes actives</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">🎯 Angles à occuper en priorité</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Communication Instagram + mailing — aucun concurrent ne semble avoir de programme structuré</li>
+          <li>Packs cross-catégories — angle commercial non exploité localement, fort levier de CA</li>
+          <li>Partenariats locaux — yoga/pilates, coiffeurs, wedding planners, maquilleuses pro</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── 04 DIAGNOSTIC ─── -->
+  <div class="section-divider">
+    <div class="section-num">04</div>
+    <div class="section-meta">
+      <div class="section-tag">Diagnostic</div>
+      <div class="section-title">Ce qui freine la croissance aujourd'hui</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">✕ Offres non structurées</span></div>
+      <div class="card-body">
+        <p>Des forfaits multi-séances existent mais aucun pack cross-catégories. Pas de bundles combinant regard + ongles + soin visage pour augmenter le panier moyen. Les clientes ne voient que la prestation demandée, pas l'ensemble de l'offre.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">✕ Acquisition non pilotée</span></div>
+      <div class="card-body">
+        <p>Bouche-à-oreille actif mais non structuré (pas de programme de parrainage formalisé). Aucun dispositif de capture de contacts. Pas de stratégie de présence locale (partenariats, événements).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">✕ Zéro CRM & zéro fichier client</span></div>
+      <div class="card-body">
+        <p>Aucune base de données centralisée des clientes existantes. Impossible de relancer, réactiver ou segmenter sans fichier. Les contacts Planity ne sont pas exploités en dehors de la plateforme.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">✕ Aucune campagne mailing ni WhatsApp</span></div>
+      <div class="card-body">
+        <p>Pas de communication proactive entre les visites. Les clientes ne sont pas rappelées à revenir, ni informées des nouveautés. Canal à fort ROI pour les offres saisonnières et la fidélisation — non exploité.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <p><strong>Aucun suivi des indicateurs :</strong> Pas de tableau de bord — aucune visibilité sur les indicateurs clés. Impossible de savoir ce qui génère du CA et ce qui sous-performe. Les décisions commerciales se prennent à l'intuition, sans données. Sans données, impossible d'identifier les leviers de croissance — mettre en place un tableau de bord dès le départ structure la croissance sur le long terme.</p>
+  </div>
+
+  <!-- ─── 05 OBJECTIFS ─── -->
+  <div class="section-divider">
+    <div class="section-num">05</div>
+    <div class="section-meta">
+      <div class="section-tag">Objectifs</div>
+      <div class="section-title">Où vous souhaitez arriver</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <ul class="styled-list">
+        <li><strong>Attirer régulièrement de nouvelles clientes</strong> — depuis Prévessin-Moëns et la zone transfrontalière via Instagram, Planity, parrainage structuré et présence locale</li>
+        <li><strong>Augmenter le panier moyen par visite</strong> — grâce à des offres packagées cross-catégories et une montée en gamme claire</li>
+        <li><strong>Construire un fichier client exploitable</strong> — base de données centralisée pour pouvoir communiquer, segmenter et relancer</li>
+        <li><strong>Mettre en place les fondations du mailing</strong> — pour lancer des campagnes d'emailing et WhatsApp dès que la base est constituée</li>
+        <li><strong>Fidéliser les clientes existantes</strong> — programme de fidélité + suivi post-prestation pour réduire le taux de perte</li>
+        <li><strong>Instaurer un suivi régulier des indicateurs de performance</strong> — tableau de bord clair pour piloter la croissance avec des données concrètes</li>
+        <li><strong>Asseoir le positionnement premium full-service</strong> — être reconnue comme la référence beauté & bien-être du Pays de Gex</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ─── 06 PLAN D'ACTION ─── -->
+  <div class="section-divider">
+    <div class="section-num">06</div>
+    <div class="section-meta">
+      <div class="section-tag">Plan d'action</div>
+      <div class="section-title">Ce qu'on met en place concrètement — 3 axes</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="grid-3" style="margin-bottom:2rem;">
+    <div style="background:var(--ink);border-radius:12px;padding:1.4rem;text-align:center;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">📣</div>
+      <div style="font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--cherry);font-weight:700;margin-bottom:0.3rem;">AXE 1</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:white;font-weight:600;">Acquisition</div>
+      <div style="font-size:0.72rem;color:rgba(255,255,255,0.4);margin-top:0.3rem;">Capter de nouvelles clientes via Instagram, Planity, parrainage et présence locale.</div>
+    </div>
+    <div style="background:var(--cherry);border-radius:12px;padding:1.4rem;text-align:center;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">💎</div>
+      <div style="font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);font-weight:700;margin-bottom:0.3rem;">AXE 2 — RECOMMANDÉ</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:white;font-weight:600;">Conversion & Panier</div>
+      <div style="font-size:0.72rem;color:rgba(255,255,255,0.7);margin-top:0.3rem;">Structurer les offres, créer des packs et des moments saisonniers.</div>
+    </div>
+    <div style="background:var(--ink);border-radius:12px;padding:1.4rem;text-align:center;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">🔄</div>
+      <div style="font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--cherry);font-weight:700;margin-bottom:0.3rem;">AXE 3</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:white;font-weight:600;">Fidélisation & CRM</div>
+      <div style="font-size:0.72rem;color:rgba(255,255,255,0.4);margin-top:0.3rem;">Construire le fichier client, fidéliser et piloter par les indicateurs.</div>
+    </div>
+  </div>
+
+  <div class="axe-card">
+    <div class="axe-header">
+      <div class="axe-num">1</div>
+      <div>
+        <div class="axe-title">Acquisition — Être trouvée & choisie</div>
+        <div class="axe-sub">Mois 1–2</div>
+      </div>
+    </div>
+    <div class="axe-body">
+      <ul>
+        <li><strong>Stratégie d'avis Google</strong> — protocole de sollicitation post-prestation (message WhatsApp à J+2), objectif +30 avis en 2 mois, gestion des réponses publiques.</li>
+        <li><strong>Programme de parrainage formalisé</strong> — offre "Amène une amie" avec mécanisme simple (code ou carte), communication en salon et sur Instagram.</li>
+        <li><strong>Outil de réservation optimisé</strong> — Planity déjà actif — à optimiser : lien en bio Instagram, QR code en salon.</li>
+        <li><strong>Partenariats locaux ciblés</strong> — salons de coiffure, centres yoga/pilates, boutiques mode CSP+, maquilleuses professionnelles, coffee shops, wedding planners. Objectif : échange de visibilité, dépôt de cartes, co-événements.</li>
+        <li><strong>Événements & présence locale</strong> — participer ou co-organiser des événements locaux (marchés, pop-ups beauty) pour capter une clientèle active et diversifiée.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="axe-card">
+    <div class="axe-header">
+      <div class="axe-num">2</div>
+      <div>
+        <div class="axe-title">Conversion & Panier — Vendre mieux</div>
+        <div class="axe-sub">Mois 1–2</div>
+      </div>
+    </div>
+    <div class="axe-body">
+      <ul>
+        <li><strong>Structuration de la gamme</strong> — logique d'upsell intra-catégorie + logique cross-catégories pour guider la montée en gamme entre prestations.</li>
+        <li><strong>Création de packs cross-catégories</strong> — Pack Mariée (cils + ongles + soin visage), Pack Détox Drainant (3 séances drainage + madéro), Pack Éclat Visage (nettoyage + soin hydratant + lifting coréen), Pack Duo mère/fille — avec tarifs packagés et visuels dédiés.</li>
+        <li><strong>Mise en avant du pôle bien-être</strong> — drainage + madérothérapie comme prestations signature : contenu dédié Instagram, pack 6 séances mis en avant, paiement en 3x valorisé.</li>
+        <li><strong>Offres saisonnières planifiées</strong> — calendrier (été, rentrée, Noël, Saint-Valentin, fête des mères) avec offre + contenu Instagram prêts à l'avance.</li>
+        <li><strong>Menu de prestations visuel</strong> — support clair (PDF digital + affichage salon) présentant les offres de façon premium et lisible.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="axe-card">
+    <div class="axe-header">
+      <div class="axe-num">3</div>
+      <div>
+        <div class="axe-title">Fidélisation & CRM — Construire la base, faire revenir, piloter</div>
+        <div class="axe-sub">Mois 2–3</div>
+      </div>
+    </div>
+    <div class="axe-body">
+      <ul>
+        <li><strong>Construction du fichier client + CRM</strong> — mise en place d'un outil CRM pour centraliser les informations client : nom, contact, prestations, fréquence de visite, préférences.</li>
+        <li><strong>Programme de fidélité</strong> — carte tampon digitale ou physique. Idée : à la fin de la prestation, si la cliente laisse un avis sur Google et sur Planity, elle reçoit deux tampons sur sa carte de fidélité.</li>
+        <li><strong>Suivi post-prestation</strong> — message WhatsApp personnalisé à J+2 : satisfaction, invitation à laisser un avis, lien de réservation.</li>
+        <li><strong>Fondations mailing</strong> — collecte d'emails consentis à chaque visite ou réservation en ligne. Création d'un template aux couleurs de L'Instant Glow.</li>
+        <li><strong>WhatsApp Broadcast mensuel</strong> — actualité salon, offre du mois, nouveau soin — en parallèle du mailing.</li>
+        <li><strong>Tableau de bord & suivi des indicateurs</strong> — indicateurs clés suivis chaque mois, partagés avec Sihem à chaque point mensuel.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ─── 07 ORGANISATION / ROADMAP ─── -->
+  <div class="section-divider">
+    <div class="section-num">07</div>
+    <div class="section-meta">
+      <div class="section-tag">Organisation</div>
+      <div class="section-title">Roadmap sur 6 mois — Juin → Décembre 2026</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">Mois 1 — Juin · Semaines 1–2</div>
+      <div class="timeline-title">Diagnostic & Fondations</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>Audit gamme Planity + restructuration cross-catégories</li>
+          <li>Analyse concurrentielle approfondie</li>
+          <li>Définition des packs thématiques</li>
+          <li>Présentation plan global à Sihem</li>
+          <li>Création du tableau de bord indicateurs</li>
+          <li>Setup CRM + protocole de collecte des informations client</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Mois 1 — Juin · Semaines 3–4</div>
+      <div class="timeline-title">Mise en place Acquisition & Offres</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>Protocole avis Google WhatsApp lancé</li>
+          <li>Programme parrainage configuré</li>
+          <li>Packs cross-catégories finalisés + visuels</li>
+          <li>Menu prestations visuel livré</li>
+          <li>Identification et prise de contact partenaires locaux</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Mois 2 — Juillet</div>
+      <div class="timeline-title">Lancement Fidélisation & CRM</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>Fichier client créé + protocole de collecte en place</li>
+          <li>Programme de fidélité lancé (carte tampon + règle avis Google/Planity)</li>
+          <li>Suivi post-prestation WhatsApp J+2 actif</li>
+          <li>Template mailing créé</li>
+          <li>Calendrier offres saisonnières juillet–décembre livré</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Mois 3 — Août</div>
+      <div class="timeline-title">Premiers envois & Pilotage</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>Première newsletter + broadcast WhatsApp mensuel envoyé</li>
+          <li>Synchronisation totale stratégie ↔ Instagram</li>
+          <li>Premier bilan indicateurs avec Sihem</li>
+          <li>Offre saisonnière été activée</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Mois 4 — Septembre</div>
+      <div class="timeline-title">Montée en puissance & Rentrée</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>Rapport mensuel + ajustements selon données réelles</li>
+          <li>Offre saisonnière rentrée activée (contenu + promo)</li>
+          <li>Activation des partenariats locaux identifiés</li>
+          <li>Point stratégique mensuel 1h avec Sihem</li>
+          <li>Réactivation clientes dormantes (premier segment CRM)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Mois 5 — Octobre</div>
+      <div class="timeline-title">Optimisation & Préparation Noël</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>Rapport mensuel + tableau de bord indicateurs</li>
+          <li>Préparation des offres de fin d'année (Noël, Black Friday beauté)</li>
+          <li>Ajustements de la gamme selon les performances observées</li>
+          <li>Point stratégique mensuel 1h avec Sihem</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Mois 6 — Novembre–Décembre</div>
+      <div class="timeline-title">Sprint de fin d'année & Bilan</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>Activation offres Black Friday + Noël (contenu + newsletter + WhatsApp)</li>
+          <li>Rapport semestriel complet + tableau de bord indicateurs</li>
+          <li>Recommandations stratégiques pour le semestre suivant</li>
+          <li>Ouverture possible : campagnes Meta Ads ciblées Pays de Gex</li>
+          <li>Point stratégique bilan 6 mois avec Sihem</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sep"><div class="sep-line"></div><span class="sep-label">Livrables mensuels</span><div class="sep-line"></div></div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">📋 Livrables stratégiques</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Gamme restructurée + logique de montée en gamme cross-catégories</li>
+          <li>3–4 packs thématiques (visuel + description + tarif)</li>
+          <li>Calendrier offres saisonnières juin–décembre</li>
+          <li>Fichier client structuré + protocole de collecte</li>
+          <li>Programme de fidélité formalisé (carte tampon + règle avis)</li>
+          <li>Template newsletter + 1er envoi mensuel</li>
+          <li>Protocoles WhatsApp post-prestation + parrainage</li>
+          <li>Menu de prestations visuel (PDF + salon)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">📊 Livrables de pilotage</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Tableau de bord indicateurs — mis en place dès le mois 1</li>
+          <li>Rapport mensuel synthétique + recommandations basées sur les données</li>
+          <li>Rapport Instagram mensuel (statistiques + analyse + recommandations)</li>
+          <li>Point stratégique mensuel (1h) avec Sihem</li>
+          <li>Broadcast WhatsApp mensuel rédigé</li>
+          <li>Newsletter mensuelle rédigée et envoyée</li>
+          <li>Synchronisation contenu Instagram ↔ offres commerciales</li>
+          <li>Rapport semestriel complet à 6 mois</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── 08 CE QUE VOUS OBTENEZ ─── -->
+  <div class="section-divider">
+    <div class="section-num">08</div>
+    <div class="section-meta">
+      <div class="section-tag">Ce que vous obtenez</div>
+      <div class="section-title">Une infrastructure complète au bout de 6 mois</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <p>À l'issue de ces 6 mois, L'Instant Glow dispose d'une infrastructure marketing et commerciale opérationnelle : un flux d'acquisition actif, une gamme structurée, un fichier client exploitable et les bases du mailing en place. Les indicateurs de performance permettent de piloter la croissance en autonomie, avec des données concrètes à chaque point mensuel.</p>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <p><strong>Note importante :</strong> Les résultats observés dépendent de nombreux facteurs (saisonnalité, taux d'adoption des outils, engagement de l'équipe en salon). Les éléments ci-dessous décrivent ce qui sera en place et opérationnel — non des résultats garantis. C'est la solidité de l'infrastructure qui crée les conditions de la croissance.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <ul class="styled-list">
+        <li><strong>Offres structurées & communicables</strong> — gamme lisible, packs cross-catégories attrayants, calendrier saisonnier opérationnel</li>
+        <li><strong>Fichier client constitué + CRM actif</strong> — base de données des clientes actives, prête à être segmentée et adressée</li>
+        <li><strong>Mailing & WhatsApp actifs</strong> — premier canal de communication directe opérationnel, fondation de la relation long terme</li>
+        <li><strong>Programme de fidélité lancé</strong> — les clientes ont une raison concrète de revenir et de recommander</li>
+        <li><strong>Tableau de bord indicateurs opérationnel</strong> — indicateurs clés suivis chaque mois, premières décisions basées sur des données réelles</li>
+        <li><strong>Partenariats locaux activés</strong> — réseau de prescripteurs locaux en place, visibilité élargie sur la zone</li>
+        <li><strong>Cohérence totale</strong> — stratégie marketing, contenu Instagram et offres commerciales forment un système cohérent et lisible</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ─── 09 INVESTISSEMENT ─── -->
+  <div class="section-divider">
+    <div class="section-num">09</div>
+    <div class="section-meta">
+      <div class="section-tag">Investissement</div>
+      <div class="section-title">Tarifs & conditions</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="pricing-options">
+    <div class="pricing-option">
+      <div class="pricing-option-inner">
+        <div class="pricing-option-label">Option A</div>
+        <div class="pricing-option-name">Stratégie seule</div>
+        <div class="pricing-option-price">
+          <span class="currency">€</span>
+          <span class="num">600</span>
+          <span class="per">/ mois</span>
+        </div>
+        <ul class="pricing-option-features">
+          <li>Audit & plan stratégique mensuel</li>
+          <li>Livrables stratégiques (packs, CRM, mailing)</li>
+          <li>Tableau de bord indicateurs</li>
+          <li>Rapport mensuel + point stratégique 1h</li>
+          <li class="not-included">Gestion du contenu Instagram</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pricing-option featured">
+      <div class="pricing-option-badge">⭐ Option recommandée</div>
+      <div class="pricing-option-inner">
+        <div class="pricing-option-label">Option B</div>
+        <div class="pricing-option-name">Stratégie + Community</div>
+        <div class="pricing-option-price">
+          <span class="currency">€</span>
+          <span class="num">900</span>
+          <span class="per">/ mois</span>
+        </div>
+        <ul class="pricing-option-features">
+          <li>Tout le contenu de l'Option A</li>
+          <li>Gestion Instagram complète (12–16 posts/mois)</li>
+          <li>Analyse & rapport statistiques Instagram mensuel</li>
+          <li>Newsletter + broadcast WhatsApp mensuel</li>
+          <li>Synchronisation offres ↔ contenu Instagram</li>
+          <li>Un seul interlocuteur, vision unifiée</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pricing-option">
+      <div class="pricing-option-inner">
+        <div class="pricing-option-label">Option C</div>
+        <div class="pricing-option-name">Stratégie + Community + Ads</div>
+        <div class="pricing-option-price">
+          <span class="currency">€</span>
+          <span class="num">1 000</span>
+          <span class="per">/ mois</span>
+        </div>
+        <ul class="pricing-option-features">
+          <li>Tout le contenu de l'Option B</li>
+          <li>Setup & pilotage campagnes Meta Ads</li>
+          <li>Ciblage Pays de Gex / Suisse romande</li>
+          <li>Rapport performances pub mensuel</li>
+          <li>Budget pub conseillé : 100–200 €/mois (hors forfait)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:0.9rem;">
+    <div style="background:var(--ink);padding:0.65rem 1.4rem;">
+      <span style="font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:white;font-weight:600;">Transparence sur le tarif</span>
+    </div>
+    <div style="padding:1.2rem 1.5rem;">
+      <p style="font-size:0.85rem;color:var(--ink-soft);line-height:1.75;font-weight:300;margin-bottom:1.2rem;">Base de calcul : <strong>~55h/mois</strong> (12–14h/semaine) incluant la gestion Instagram complète avec analyse & reporting statistiques, la stratégie, les livrables et le suivi CRM. Voici comment ce tarif se situe par rapport au marché :</p>
+      <table style="width:100%;border-collapse:collapse;font-size:0.8rem;">
+        <thead>
+          <tr style="border-bottom:2px solid var(--border);">
+            <th style="text-align:left;padding:0.5rem 0.6rem;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-light);font-weight:600;">Profil</th>
+            <th style="text-align:center;padding:0.5rem 0.6rem;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-light);font-weight:600;">Taux horaire</th>
+            <th style="text-align:right;padding:0.5rem 0.6rem;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-light);font-weight:600;">Pour ~55h/mois</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:0.55rem 0.6rem;color:var(--muted);font-weight:300;">CM + Stratège débutant</td>
+            <td style="padding:0.55rem 0.6rem;text-align:center;color:var(--muted);">30 – 45 €/h</td>
+            <td style="padding:0.55rem 0.6rem;text-align:right;color:var(--muted);">1 650 – 2 475 €</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:0.55rem 0.6rem;color:var(--muted);font-weight:300;">CM + Stratège intermédiaire</td>
+            <td style="padding:0.55rem 0.6rem;text-align:center;color:var(--muted);">50 – 75 €/h</td>
+            <td style="padding:0.55rem 0.6rem;text-align:right;color:var(--muted);">2 750 – 4 125 €</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:0.55rem 0.6rem;color:var(--muted);font-weight:300;">Agence (CM + stratégie)</td>
+            <td style="padding:0.55rem 0.6rem;text-align:center;color:var(--muted);">80 – 150 €/h</td>
+            <td style="padding:0.55rem 0.6rem;text-align:right;color:var(--muted);">4 400 – 8 250 €</td>
+          </tr>
+          <tr style="background:var(--cherry-light);">
+            <td style="padding:0.65rem 0.6rem;color:var(--cherry);font-weight:700;">✦ Inès Ouajib — Option A (stratégie seule)</td>
+            <td style="padding:0.65rem 0.6rem;text-align:center;color:var(--cherry);font-weight:700;">~10,9 €/h</td>
+            <td style="padding:0.65rem 0.6rem;text-align:right;color:var(--cherry);font-weight:700;">600 € / mois</td>
+          </tr>
+          <tr style="background:var(--cherry-light);">
+            <td style="padding:0.65rem 0.6rem;color:var(--cherry);font-weight:700;">✦ Inès Ouajib — Option B (stratégie + CM)</td>
+            <td style="padding:0.65rem 0.6rem;text-align:center;color:var(--cherry);font-weight:700;">~16,4 €/h</td>
+            <td style="padding:0.65rem 0.6rem;text-align:right;color:var(--cherry);font-weight:700;">900 € / mois</td>
+          </tr>
+          <tr style="background:var(--cherry-light);">
+            <td style="padding:0.65rem 0.6rem;color:var(--cherry);font-weight:700;">✦ Inès Ouajib — Option C (+ Ads)</td>
+            <td style="padding:0.65rem 0.6rem;text-align:center;color:var(--cherry);font-weight:700;">~18,2 €/h</td>
+            <td style="padding:0.65rem 0.6rem;text-align:right;color:var(--cherry);font-weight:700;">1 000 € / mois</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.78rem;color:var(--muted);font-weight:300;line-height:1.65;margin-top:1rem;font-style:italic;">Ce tarif préférentiel est proposé dans le cadre d'une première collaboration. Il est amené à évoluer lors des prochaines missions, en cohérence avec le marché.</p>
+    </div>
+  </div>
+
+  <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.2rem 1.5rem;margin-bottom:1rem;">
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;justify-content:center;">
+      <span style="background:var(--cherry);color:white;font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;padding:0.4rem 0.9rem;border-radius:20px;">Retainer mensuel</span>
+      <span style="background:transparent;border:1px solid var(--border);color:var(--muted);font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;padding:0.4rem 0.9rem;border-radius:20px;">Sans engagement long terme</span>
+      <span style="background:transparent;border:1px solid var(--border);color:var(--muted);font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;padding:0.4rem 0.9rem;border-radius:20px;">Préavis 2 semaines</span>
+      <span style="background:transparent;border:1px solid var(--border);color:var(--muted);font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;padding:0.4rem 0.9rem;border-radius:20px;">Acompte 50% au démarrage</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="doc-footer">
+    <div class="doc-footer-brand">
+      <strong>Inès Ouajib</strong> · Stratégie & Community Management<br>
+      <span>Proposition préparée en mai 2026 — Pour L'Instant Glow · Prévessin-Moëns</span>
+    </div>
+    <div class="doc-footer-page">Document confidentiel</div>
+  </div>
+
+</div><!-- end doc-wrap -->
+
+</body>
+</html>
