@@ -760,7 +760,9 @@
   }
   .analysis-row:first-child { border-top: 1px solid var(--border); }
   .analysis-label {
+    width: 160px;
     min-width: 160px;
+    max-width: 160px;
     padding: 0.8rem 1rem;
     background: var(--cherry-light);
     font-size: 0.6rem;
@@ -771,6 +773,7 @@
     display: flex;
     align-items: flex-start;
     flex-shrink: 0;
+    vertical-align: top;
   }
   .analysis-content {
     padding: 0.8rem 1rem;
@@ -907,7 +910,7 @@
     .swot-grid { grid-template-columns: 1fr; }
     .cover-title { font-size: 2.8rem; }
     .pricing-num { font-size: 3rem; }
-    .analysis-label { min-width: 120px; }
+    .analysis-label { min-width: 120px; width: 120px; max-width: 120px; }
   }
 </style>
 </head>
@@ -1048,7 +1051,7 @@
   </div>
 
   <div class="highlight">
-    <p><strong>Points forts différenciateurs :</strong> Note client excellente 5.0/5 sur Planity, reflet d'une expérience soignée et d'une équipe à l'écoute. Gamme full-service unique dans la zone — regard, ongles, corps, blanchiment dentaire — qui permet à chaque cliente de tout trouver en un seul lieu. L'ouverture le dimanche, rare localement, constitue un avantage concurrentiel réel pour une clientèle active et frontalière.</p>
+    <p><strong>Points forts différenciateurs :</strong> Note client excellente 5.0/5 sur Planity, reflet d'une expérience soignée et d'une équipe à l'écoute. Gamme full-service unique dans la zone — regard, ongles, corps, soins visage — qui permet à chaque cliente de tout trouver en un seul lieu. L'ouverture le dimanche, rare localement, constitue un avantage concurrentiel réel pour une clientèle active et frontalière.</p>
   </div>
 
   <!-- ─── 02 ÉTUDE DE MARCHÉ ─── -->
@@ -1093,7 +1096,6 @@
         <ul class="styled-list">
           <li>Soins bien-être holistiques — drainage lymphatique, madérothérapie, massages en forte demande post-Covid</li>
           <li>Beauté du regard — extensions et rehaussement de cils en croissance continue</li>
-          <li>Blanchiment dentaire — forte demande chez les 25–45 ans</li>
           <li>Bronzage sans UV — spray tan en montée, clientèle sensibilisée aux risques UV</li>
           <li>Réservation en ligne — 70% des RDV beauté pris hors heures de bureau</li>
         </ul>
@@ -1120,7 +1122,7 @@
     <div class="analysis-row"><div class="analysis-label">S — Social</div><div class="analysis-content">Croissance de la demande de bien-être holistique post-Covid. Tendance forte au self-care et aux soins corporels chez les 25–45 ans. Population jeune et active dans le Pays de Gex, en forte croissance démographique. Sensibilité accrue aux avis en ligne et à l'expérience client premium.</div></div>
     <div class="analysis-row"><div class="analysis-label">T — Technologique</div><div class="analysis-content">Planity comme standard de réservation en ligne dans le secteur beauté. Instagram incontournable pour l'acquisition locale de clientèle beauté. CRM et outils d'automatisation accessibles aux TPE. Meta Ads : ciblage géolocalisé précis — levier puissant pour le Pays de Gex.</div></div>
     <div class="analysis-row"><div class="analysis-label">E — Environnemental</div><div class="analysis-content">Montée en puissance des cosmétiques naturels et cruelty-free. Spray tan positionné comme alternative saine aux UV — argument différenciateur. Attente croissante pour des pratiques éco-responsables en salon.</div></div>
-    <div class="analysis-row"><div class="analysis-label">L — Légal</div><div class="analysis-content">RGPD : obligations de collecte et traitement des données clients (consentement explicite requis). Réglementation sur le blanchiment dentaire, les cabines UV (réservé aux esthéticiennes diplômées). Normes hygiène et sécurité dans les instituts de beauté (ANSM).</div></div>
+    <div class="analysis-row"><div class="analysis-label">L — Légal</div><div class="analysis-content">RGPD : obligations de collecte et traitement des données clients (consentement explicite requis). Normes hygiène et sécurité dans les instituts de beauté (ANSM). Réglementation sur les cabines UV (réservé aux esthéticiennes diplômées).</div></div>
   </div>
 
   <div class="sep"><div class="sep-line"></div><span class="sep-label">Les 5 forces de Porter</span><div class="sep-line"></div></div>
@@ -1129,7 +1131,7 @@
     <div class="analysis-row"><div class="analysis-label">2. Pouvoir des clients</div><div class="analysis-content"><strong>Force : ÉLEVÉE</strong>  Clientèle exigeante, habituée aux hauts standards. Forte mobilité, peuvent facilement changer d'institut. Les avis en ligne ont un poids décisif dans le choix. À compenser par une expérience client irréprochable et la fidélisation.</div></div>
     <div class="analysis-row"><div class="analysis-label">3. Pouvoir des fournisseurs</div><div class="analysis-content"><strong>Force : FAIBLE</strong>  Marché des fournisseurs cosmétiques très fragmenté, nombreuses alternatives. Pas de dépendance critique à un fournisseur unique. Opportunité de valoriser des marques premium pour renforcer le positionnement.</div></div>
     <div class="analysis-row"><div class="analysis-label">4. Substitution</div><div class="analysis-content"><strong>Force : MODÉRÉE</strong>  Produits cosmétiques DIY en essor, ne remplacent pas l'expertise technique. Tendance massage à domicile, risque limité sur le positionnement premium.</div></div>
-    <div class="analysis-row"><div class="analysis-label">5. Intensité concurrentielle</div><div class="analysis-content"><strong>Force : MODÉRÉE</strong>  Instituts concurrents à Genève en moins de 15 minutes, mais à des tarifs en CHF nettement supérieurs. Quelques acteurs bien installés sur la zone, mais aucun avec une offre aussi complète. L'Instant Glow est le seul à combiner regard + corps + bien-être + blanchiment. Avantage compétitif durable si la notoriété digitale est construite rapidement.</div></div>
+    <div class="analysis-row"><div class="analysis-label">5. Intensité concurrentielle</div><div class="analysis-content"><strong>Force : MODÉRÉE</strong>  Instituts concurrents à Genève en moins de 15 minutes, mais à des tarifs en CHF nettement supérieurs. Quelques acteurs bien installés sur la zone, mais aucun avec une offre aussi complète. L'Instant Glow est le seul à combiner regard + corps + bien-être + soins visage. Avantage compétitif durable si la notoriété digitale est construite rapidement.</div></div>
   </div>
 
   <div class="sep"><div class="sep-line"></div><span class="sep-label">Analyse SWOT</span><div class="sep-line"></div></div>
@@ -1190,54 +1192,124 @@
 
   <div class="card">
     <div class="card-body">
-      <p>Quatre acteurs principaux opèrent sur la zone Prévessin-Moëns / Pays de Gex. L'Instant Glow se distingue par la complétude de son offre et sa note client excellente — mais accuse un retard de notoriété digitale que la stratégie en cours vise à combler.</p>
+      <p>Quatre acteurs principaux opèrent sur la zone Prévessin-Moëns / Ferney-Voltaire. L'Instant Glow se distingue par la complétude de son offre et sa note client excellente — mais accuse un retard de notoriété digitale que la stratégie en cours vise à combler.</p>
     </div>
   </div>
+
+  <div class="sep"><div class="sep-line"></div><span class="sep-label">Données collectées — résumé</span><div class="sep-line"></div></div>
 
   <table class="data-table">
     <thead>
       <tr>
-        <th>Institut</th>
-        <th>Note / Avis</th>
-        <th>Spécialité</th>
-        <th>Forces</th>
-        <th>Faiblesses</th>
+        <th style="width:18%">Institut</th>
+        <th style="width:16%">Note Planity / Avis</th>
+        <th style="width:16%">Localisation</th>
+        <th style="width:50%">Spécialité</th>
       </tr>
     </thead>
     <tbody>
-      <tr class="highlight-row">
-        <td><strong>✦ L'Instant Glow — NOUS</strong><br><span style="font-size:0.72rem;opacity:0.7">Prévessin-Moëns</span></td>
-        <td>5.0 / 56 avis (Planity)</td>
-        <td>Full-service : cils, ongles, soins corps, madéro, blanchiment</td>
-        <td>Offre la plus complète, note excellente, ouverture dimanche, résa en ligne, forfaits</td>
-        <td>CRM absent, 0 mailing, aucun KPI, Instagram en structure</td>
+      <tr>
+        <td><strong>Justine Ruggieri</strong></td>
+        <td>4.9 / 447 avis</td>
+        <td>Ferney-Voltaire</td>
+        <td>Full-service : cils, drainage Renata França, LPG, soins visage, ongles, épilation laser, microneedling</td>
       </tr>
       <tr>
-        <td><strong>Belle Allure by Khadija</strong><br><span style="font-size:0.72rem;color:var(--muted)">Prévessin-Moëns</span></td>
-        <td>4.9 / 739 avis (Planity)</td>
-        <td>Beauté du regard, microblading, hammam privatisé, maquillage mariée</td>
-        <td>Très fort référencement Google, hammam unique, positionnement luxe oriental</td>
-        <td>Moins complet sur bien-être corporel, manucure/pédicure, pas de madéro</td>
+        <td><strong>Belle Allure by Khadija</strong></td>
+        <td>4.8 / ~270 avis (Google)</td>
+        <td>Prévessin-Moëns</td>
+        <td>Regard, microblading, hammam privatisé, manucure, soins visage, maquillage mariée</td>
       </tr>
       <tr>
-        <td><strong>Samantha Beauty House</strong><br><span style="font-size:0.72rem;color:var(--muted)">Genève</span></td>
-        <td>5.0 / 58 avis</td>
-        <td>Maquillage, rehaussement cils, teinture sourcils</td>
-        <td>Positionnement sur mesure, expérience personnalisée</td>
-        <td>Offre plus restreinte, moins de visibilité digitale</td>
+        <td><strong>Luxury Lashes</strong></td>
+        <td>5.0 / 706 avis</td>
+        <td>Ferney-Voltaire</td>
+        <td>Extensions cils, drainage, madérothérapie, ongles, soins visage, épilation cire orientale</td>
       </tr>
       <tr>
-        <td><strong>Ingrit Esthétique</strong><br><span style="font-size:0.72rem;color:var(--muted)">Prévessin-Moëns</span></td>
-        <td>4.8 / 10 avis</td>
-        <td>Épilation laser, spécialiste épilation définitive</td>
-        <td>Positionnement médical, crédibilité, tarifs premium assumés</td>
-        <td>Spécialiste unique — ne concurrence pas sur l'ensemble des prestations</td>
+        <td><strong>BrowCilsConcept</strong></td>
+        <td>4.8 / 38 avis</td>
+        <td>Ferney-Voltaire</td>
+        <td>Spécialiste regard uniquement : browlift, extensions, rehaussement, Korean LashLift</td>
       </tr>
     </tbody>
   </table>
 
   <div class="highlight">
-    <p><strong>Conclusion benchmark :</strong> L'Instant Glow est le seul institut de la zone à proposer à la fois les soins du regard, le corps, le bien-être sculpté, le blanchiment dentaire et les ongles dans un même espace. Une offre full-service unique localement. L'enjeu est désormais de la faire connaître.</p>
+    <p>Les autres instituts identifiés (Beauty Spa By Anissa, L'instant pour elles, Epil Cire Lyon, Atelier beauté de Sofia, Lawizell) sont soit introuvables sur Planity dans la zone, soit sans données exploitables, soit trop éloignés géographiquement.</p>
+  </div>
+
+  <div class="sep"><div class="sep-line"></div><span class="sep-label">Ma recommandation : ces 4 concurrents</span><div class="sep-line"></div></div>
+
+  <div class="axe-card">
+    <div class="axe-header">
+      <div class="axe-num">1</div>
+      <div>
+        <div class="axe-title">Justine Ruggieri — Ferney-Voltaire</div>
+        <div class="axe-sub">La référence la plus directement comparable à L'Instant Glow</div>
+      </div>
+    </div>
+    <div class="axe-body">
+      <ul>
+        <li>447 avis, note 4.9, ouverture lun–sam — l'acteur le plus sérieux sur la zone.</li>
+        <li>Offre très complète : cils, drainage Renata França, LPG corps et visage, microneedling, soins visage Ella Baché, ongles, épilation laser.</li>
+        <li>Positionnement premium assumé, tarifs élevés : drainage 150€, extensions 152€.</li>
+        <li><strong>C'est la référence concurrentielle la plus directe pour L'Instant Glow.</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="axe-card">
+    <div class="axe-header">
+      <div class="axe-num">2</div>
+      <div>
+        <div class="axe-title">Belle Allure by Khadija — Prévessin-Moëns</div>
+        <div class="axe-sub">Concurrente directe géographiquement — même commune que L'Instant Glow</div>
+      </div>
+    </div>
+    <div class="axe-body">
+      <ul>
+        <li>Note Google 4.8 sur ~270 avis — très bien référencée localement.</li>
+        <li>Positionnement singulier autour du hammam oriental privatisé, du microblading et de l'expérience "luxe oriental".</li>
+        <li>Concurrente directe géographiquement, à surveiller en priorité.</li>
+        <li><strong>Note :</strong> les 739 avis Planity mentionnés initialement semblent être une confusion de source — la note Google (4.8 / ~270 avis) est la donnée la plus fiable et vérifiable.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="axe-card">
+    <div class="axe-header">
+      <div class="axe-num">3</div>
+      <div>
+        <div class="axe-title">Luxury Lashes — Ferney-Voltaire</div>
+        <div class="axe-sub">Volume d'avis impressionnant, concurrent direct sur plusieurs prestations-clés</div>
+      </div>
+    </div>
+    <div class="axe-body">
+      <ul>
+        <li>706 avis, note parfaite 5.0 — volume exceptionnel pour un institut de la zone.</li>
+        <li>Offre proche de L'Instant Glow : extensions, drainage, madérothérapie, soins visage, ongles.</li>
+        <li><strong>Avantage fort :</strong> ouvert 7j/7 jusqu'à 21h — amplitude horaire difficile à concurrencer.</li>
+        <li>Concurrent direct sur plusieurs prestations-clés.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="axe-card">
+    <div class="axe-header">
+      <div class="axe-num">4</div>
+      <div>
+        <div class="axe-title">BrowCilsConcept — Ferney-Voltaire</div>
+        <div class="axe-sub">Spécialiste regard — bon angle de différenciation pour L'Instant Glow</div>
+      </div>
+    </div>
+    <div class="axe-body">
+      <ul>
+        <li>38 avis, note 4.8 — spécialiste regard ultra-focalisé (une seule esthéticienne, paiement en espèces uniquement).</li>
+        <li>Occupe la même adresse physique que Luxury Lashes (Chemin du Levant, Ferney-Voltaire).</li>
+        <li>Pertinent à inclure car il représente le profil "spécialiste regard" face au positionnement "full-service" de L'Instant Glow — <strong>bon angle de différenciation à activer en communication.</strong></li>
+      </ul>
+    </div>
   </div>
 
   <div class="grid-2">
@@ -1247,7 +1319,7 @@
         <ul class="styled-list">
           <li>Pôle bien-être sculpté : drainage lymphatique, madérothérapie, lifting coréen</li>
           <li>Ouverture dimanche : rare dans la zone, à valoriser en communication</li>
-          <li>Note client excellente 5.0 : à afficher partout : Instagram, communication client</li>
+          <li>Note client excellente 5.0 : à afficher partout — Instagram, communication client</li>
           <li>Full-service en un lieu : "tout en un", gain de temps pour les clientes actives</li>
         </ul>
       </div>
@@ -1652,57 +1724,6 @@
           <li>Budget pub conseillé : 100–200 €/mois (hors forfait)</li>
         </ul>
       </div>
-    </div>
-  </div>
-
-  <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:0.9rem;">
-    <div style="background:var(--ink);padding:0.65rem 1.4rem;">
-      <span style="font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:white;font-weight:600;">Transparence sur le tarif</span>
-    </div>
-    <div style="padding:1.2rem 1.5rem;">
-      <p style="font-size:0.85rem;color:var(--ink-soft);line-height:1.75;font-weight:300;margin-bottom:1.2rem;">Base de calcul : <strong>~55h/mois</strong> (12–14h/semaine) incluant la gestion Instagram complète avec analyse & reporting statistiques, la stratégie, les livrables et le suivi CRM. Voici comment ce tarif se situe par rapport au marché :</p>
-      <table style="width:100%;border-collapse:collapse;font-size:0.8rem;">
-        <thead>
-          <tr style="border-bottom:2px solid var(--border);">
-            <th style="text-align:left;padding:0.5rem 0.6rem;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-light);font-weight:600;">Profil</th>
-            <th style="text-align:center;padding:0.5rem 0.6rem;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-light);font-weight:600;">Taux horaire</th>
-            <th style="text-align:right;padding:0.5rem 0.6rem;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-light);font-weight:600;">Pour ~55h/mois</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom:1px solid var(--border);">
-            <td style="padding:0.55rem 0.6rem;color:var(--muted);font-weight:300;">CM + Stratège débutant</td>
-            <td style="padding:0.55rem 0.6rem;text-align:center;color:var(--muted);">30 – 45 €/h</td>
-            <td style="padding:0.55rem 0.6rem;text-align:right;color:var(--muted);">1 650 – 2 475 €</td>
-          </tr>
-          <tr style="border-bottom:1px solid var(--border);">
-            <td style="padding:0.55rem 0.6rem;color:var(--muted);font-weight:300;">CM + Stratège intermédiaire</td>
-            <td style="padding:0.55rem 0.6rem;text-align:center;color:var(--muted);">50 – 75 €/h</td>
-            <td style="padding:0.55rem 0.6rem;text-align:right;color:var(--muted);">2 750 – 4 125 €</td>
-          </tr>
-          <tr style="border-bottom:1px solid var(--border);">
-            <td style="padding:0.55rem 0.6rem;color:var(--muted);font-weight:300;">Agence (CM + stratégie)</td>
-            <td style="padding:0.55rem 0.6rem;text-align:center;color:var(--muted);">80 – 150 €/h</td>
-            <td style="padding:0.55rem 0.6rem;text-align:right;color:var(--muted);">4 400 – 8 250 €</td>
-          </tr>
-          <tr style="background:var(--cherry-light);">
-            <td style="padding:0.65rem 0.6rem;color:var(--cherry);font-weight:700;">✦ Inès Ouajib — Option A (stratégie seule)</td>
-            <td style="padding:0.65rem 0.6rem;text-align:center;color:var(--cherry);font-weight:700;">~10,9 €/h</td>
-            <td style="padding:0.65rem 0.6rem;text-align:right;color:var(--cherry);font-weight:700;">600 € / mois</td>
-          </tr>
-          <tr style="background:var(--cherry-light);">
-            <td style="padding:0.65rem 0.6rem;color:var(--cherry);font-weight:700;">✦ Inès Ouajib — Option B (stratégie + CM)</td>
-            <td style="padding:0.65rem 0.6rem;text-align:center;color:var(--cherry);font-weight:700;">~16,4 €/h</td>
-            <td style="padding:0.65rem 0.6rem;text-align:right;color:var(--cherry);font-weight:700;">900 € / mois</td>
-          </tr>
-          <tr style="background:var(--cherry-light);">
-            <td style="padding:0.65rem 0.6rem;color:var(--cherry);font-weight:700;">✦ Inès Ouajib — Option C (+ Ads)</td>
-            <td style="padding:0.65rem 0.6rem;text-align:center;color:var(--cherry);font-weight:700;">~18,2 €/h</td>
-            <td style="padding:0.65rem 0.6rem;text-align:right;color:var(--cherry);font-weight:700;">1 000 € / mois</td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="font-size:0.78rem;color:var(--muted);font-weight:300;line-height:1.65;margin-top:1rem;font-style:italic;">Ce tarif préférentiel est proposé dans le cadre d'une première collaboration. Il est amené à évoluer lors des prochaines missions, en cohérence avec le marché.</p>
     </div>
   </div>
 
